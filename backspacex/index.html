@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="assets/font/font.css">
+        <title>Ludum Dare 42 - backSpace-X</title>
+
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body {
+                background-color: #0c0c0c;
+                padding-bottom: 100px;
+            }
+
+            canvas {
+                display: block;
+                position: relative;
+                margin: auto;
+            }
+
+            .info {
+                font-family: sans-serif;
+                color: #f1f1f1;
+                text-align: center;
+                margin-bottom: 50px;;
+                margin-top: 20px;
+            }
+
+            a {
+                color: #d80041;
+            }
+
+            #status {
+                font-family: 'teeny_tiny_pixlsregular';
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="info">
+            <p><strong>Ludum Dare 42 / backSpace-X</strong></p>
+            <p><strong>[W A S D] to move - <strong>[SPACE] to fire - <strong>[P]</strong> to purchase upgraded weapon - <strong>[H]</strong> to purchase +hp</p>
+            <p style="font-size: 13px;"> 
+                Source Code: <a style="text-decoration: none;" href="https://github.com/omercanbalandi/ld42-backspace-x">github.com/omercanbalandi/ld42-backspace-x</a>
+            </p>
+            <br>
+            <p style="font-size: 12px">Created with <a href="https://p5js.org/">p5.js</a></p>
+            <p style="font-size: 10px">Twitter <a style="text-decoration: none;" href="https://twitter.com/omercanbalandi">@omercanbalandi</a></p>
+            <p style="font-size: 10px">Github <a style="text-decoration: none;" href="https://github.com/omercanbalandi">github.com/omercanbalandi</a></p>
+            <p id="status">LOADING...</p>
+        </div>
+        
+        <script src="src/p5.min.js"></script>
+        <script src="src/p5.collide2d.min.js"></script>
+        <script src="src/p5.scenemanager.js"></script>
+        <script src="src/p5.sound.min.js"></script>
+        <script src="src/gamesettings.js"></script>
+        <script src="src/objects.js"></script>
+        <script src="src/hud.js"></script>
+        <script src="src/main.js"></script>
+    </body>
+</html>
+
