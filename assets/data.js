@@ -9,5 +9,5 @@ const tags = {
 const projects = [
     {cat: "p5", name: "3D Projection", source:"https://github.com/obsfx/3DRotation-p5js", live: "https://obsfx.github.io/3dprojection"},
     {cat: "gd", name: "backSpace-x", source:"https://github.com/obsfx/ld42-backspace-x", live: "https://obsfx.github.io/backspacex/"},
-    {cat: "gd", name: "spaceinvaders.js", source:"https://github.com/obsfx/spaceinvaders.js", live: "https://obsfx.github.io/spaceinvaderjs/"}
+    {cat: "gd", name: "spaceinvaders.js", source:"https://github.com/obsfx/spaceinvaders.js", live: "https://obsfx.github.io/spaceinvadersjs/"}
 ]
