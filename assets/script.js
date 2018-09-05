@@ -18,8 +18,8 @@ for (let i in projects) {
     <div class="c_e">
         <span class="${tags[projects[i].cat].name}">${projects[i].name}</span>
         <div class="a_b">
-            <a href="${projects[i].source}">Source</a>
-            <a href="${projects[i].live}">Live</a>
+            <a href="${projects[i].source}" target="_blank">Source</a>
+            <a href="${projects[i].live}" target="_blank">Live</a>
         </div>
     </div>
     `;
