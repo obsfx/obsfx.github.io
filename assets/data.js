@@ -2,7 +2,7 @@ const tags = {
     "js": {name: "js_tag", text: "javascript", c: "#f7df1e"},
     "p5": {name: "p5_tag", text: "p5js", c: "#ff719a"},
     "fe": {name: "fe_tag", text: "front-end development", c: "#cab4f5"},
-    "gd": {name: "gd_tag", text: "game development", c: "#DDEAB8"},
+    "gd": {name: "gd_tag", text: "game development", c: "#00ff89"},
     "cc": {name: "cc_tag", text: "creative coding", c: "#9FC2CC"}
 }
 
