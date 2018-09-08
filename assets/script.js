@@ -13,8 +13,8 @@ for (let i in tags) {
     `
 }
 
-for (let i in projects) {
-
+for (let k in projects) {
+    let i = projects.length - 1 - k;
     projects_.innerHTML += `
     <div class="c_e">
         <span class="${tags[projects[i].cat].name}">${projects[i].name}</span>
