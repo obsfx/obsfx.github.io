@@ -11,5 +11,6 @@ const projects = [
     {cat: "gd", tags: ["javascript", "p5js", "ludum dare 42", "game development"], name: "backSpace-x", source:"https://github.com/obsfx/ld42-backspace-x", live: "https://obsfx.github.io/backspacex"},
     {cat: "gd", tags: ["javascript", "game development"], name: "spaceinvaders.js", source:"https://github.com/obsfx/spaceinvaders.js", live: "https://obsfx.github.io/spaceinvadersjs"},
     {cat: "cc", tags: ["javascript", "p5js", "creative coding"], name: "deep", source:"https://github.com/obsfx/creativecoding-practices-with-p5js/tree/master/1_deep", live: "https://obsfx.github.io/deep"},
-    {cat: "cc", tags: ["javascript", "p5js", "creative coding"], name: "circles", source:"https://github.com/obsfx/creativecoding-practices-with-p5js/tree/master/2_circles", live: "https://obsfx.github.io/circles"}
+    {cat: "cc", tags: ["javascript", "p5js", "creative coding"], name: "circles", source:"https://github.com/obsfx/creativecoding-practices-with-p5js/tree/master/2_circles", live: "https://obsfx.github.io/circles"},
+    {cat: "cc", tags: ["javascript", "p5js", "creative coding"], name: "waves", source:"https://github.com/obsfx/creativecoding-practices-with-p5js/tree/master/3_waves", live: "https://obsfx.github.io/waves"}
 ]
