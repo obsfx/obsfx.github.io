@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>triangles - creative coding / @obsfx</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500,500i,700">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <link rel="stylesheet" href="https://obsfx.github.io/assets/style.css">
+
+        <style>
+            canvas {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            body {
+                background-color: #B0A990;
+                font-family: 'IBM Plex Mono', monospace;
+                color: #202030;
+            }
+
+            .p5_tag {
+                font-weight: bold;
+            }
+
+            .p5_tag::after {
+                background-color: #ff719a !important;
+            }
+
+            .con {
+                position: relative;
+                z-index: 999999;
+            }
+
+            .b a::after {
+                background-color: #3F51B5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="con">
+                <div class="a">triangles</div>
+                <div class="b" style="margin: 0px;"> 
+                    <span><a style="color: white" href="https://twitter.com/obsfx" target="_blank"><i class="fab fa-twitter"></i> @obsfx</a></span>
+                </div>
+                <div class="a_b"><a href="https://obsfx.github.io">obsfx.github.io</a></div>
+                <div class="b a_c" style="margin-bottom: 0px;">
+                    <div class="a_b">creative coding practice <strong>#5</strong></div>
+                    <div class="a_b">created with <a style="color: #202030;" href="https://p5js.org/" class="p5_tag">p5js</a></div>
+                </div>
+
+                <div class="a_b">
+                    <a href="https://github.com/obsfx/creativecoding-practices-with-p5js/tree/master/5_triangles">Source</a>
+                </div>
+        </div>
+        <script src="../assets/p5.min.js"></script>
+        <script src="js/triangles.min.js"></script>
+    </body>
+</html>
