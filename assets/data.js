@@ -15,5 +15,6 @@ const projects = [
     {cat: "cc", tags: ["javascript", "p5js", "creative coding"], name: "waves", source:"https://github.com/obsfx/creativecoding-practices-with-p5js/tree/master/3_waves", live: "https://obsfx.github.io/waves"},
     {cat: "gd", tags: ["javascript", "game development"], name: "tetris.js", source:"https://github.com/obsfx/tetris-js", live: "https://obsfx.github.io/tetrisjs"},
     {cat: "cc", tags: ["javascript", "p5js", "creative coding"], name: "dots", source:"https://github.com/obsfx/creativecoding-practices-with-p5js/tree/master/4_dots", live: "https://obsfx.github.io/dots"},
-    {cat: "cc", tags: ["javascript", "p5js", "creative coding"], name: "triangles", source:"https://github.com/obsfx/creativecoding-practices-with-p5js/tree/master/5_triangles", live: "https://obsfx.github.io/triangles"}
+    {cat: "cc", tags: ["javascript", "p5js", "creative coding"], name: "triangles", source:"https://github.com/obsfx/creativecoding-practices-with-p5js/tree/master/5_triangles", live: "https://obsfx.github.io/triangles"},
+    {cat: "cc", tags: ["javascript", "p5js", "creative coding"], name: "atomic", source:"https://github.com/obsfx/creativecoding-practices-with-p5js/tree/master/6_atomic", live: "https://obsfx.github.io/atomic"}
 ]
