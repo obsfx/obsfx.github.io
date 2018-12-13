@@ -1,9 +1,10 @@
 const tags = {
     "js": {name: "js_tag", text: "javascript", c: "#f7df1e"},
-    "p5": {name: "p5_tag", text: "p5js", c: "#ff719a"},
-    "fe": {name: "fe_tag", text: "front-end development", c: "#cab4f5"},
+    "fe": {name: "fe_tag", text: "front-end development", c: "#A6FFA1"},
+    "ph": {name: "ph_tag", text: "phaser", c: "#85FFC7"},
     "gd": {name: "gd_tag", text: "game development", c: "#00ff89"},
-    "cc": {name: "cc_tag", text: "creative coding", c: "#9FC2CC"}
+    "p5": {name: "p5_tag", text: "p5js", c: "#ff719a"},
+    "cc": {name: "cc_tag", text: "creative coding", c: "#FB62F6"}
 }
 
 const projects = [
