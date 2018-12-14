@@ -1,12 +1,21 @@
 body {
     background-color: #FFF8F0;
     color: #011627;
+    overflow-x: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: -100px;
+    left: -60px;
+    z-index: -1;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     padding: 50px 120px;
+    box-sizing: border-box;
 }
 
 .item {
@@ -20,6 +29,11 @@ body {
 h3, h6 {
     margin: 0;
     padding: 0;
+}
+
+.headtext {
+    background-color: #FFF8F0;
+    display: table;
 }
 
 h3 {
@@ -45,10 +59,10 @@ h6 span {
 }
 
 .links {
-    width: 750px;
     margin-top: 20px;
     display: flex;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .links a {
@@ -105,6 +119,7 @@ h6 span {
     margin-right: 15px;
     margin-bottom: 15px;
     padding: 20px 30px;
+    background-color: #FFF8F0;
 }
 
 .ex span {
@@ -140,4 +155,58 @@ h6 span {
     display: block;
     margin-top: -5px;
     width: 100%;
+}
+
+@media screen and (max-width: 1150px) {
+    .container {
+        padding: 25px 60px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 13px;
+    }
+
+    #tags {
+        font-size: 16px;
+    }
+
+    #list {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .ex span {
+        font-size: 16px;
+    }
+
+    .ex span::after {
+        height: 6px;
+        margin-top: -6px;
+    }
+
+    .ex {
+        margin-right: 5px;
+        margin-bottom: 5px;
+        padding: 15px 18px;
+    }
+
+    .item_tags {
+        flex-wrap: wrap;
+    }
+
+    .item_tags span{
+        font-size: 12px;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    canvas {
+        top: -150px;
+    }
 }

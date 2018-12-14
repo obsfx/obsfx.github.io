@@ -9,15 +9,17 @@
         <link rel="stylesheet" href="assets/normalize.min.css">
         <link rel="stylesheet" href="assets/style.css">
         <title>Ömercan Balandı | @obsfx</title>
-        <style></style>
+        <style>
+            
+        </style>
     </head>
     <body>
 
         <div class="container">
             <div class="item">
-                <h3>ömercan balandı</h3>
-                <h6>i'm studying <span>computer science</span> at dokuz eylul university</h6>
-                <h6 class="link"> <a href="https://obsfx.github.io/">obsfx.github.io</a> </h6>
+                <h3 class="headtext">ömercan balandı</h3>
+                <h6 class="headtext">i'm studying <span>computer science</span> at dokuz eylul university</h6>
+                <h6 class="link headtext"> <a href="https://obsfx.github.io/">obsfx.github.io</a> </h6>
             </div>
 
             <div class="links">
@@ -41,5 +43,69 @@
 
         <script src="assets/data.js"></script>
         <script src="assets/script.js"></script>
+        <script src="assets/p5.min.js"></script>
+
+        <script>
+            const w = 1600;
+            const h = 320;
+
+            const COL = 15;
+            const ROW = 25;
+
+            const sclX = Math.floor(w / COL);
+            const sclY = Math.floor(h / ROW);
+
+            const palettes = [
+                ["187,190,100", "142,85,114", "188,170,153", "68,56,80"],
+                ["255,105,120", "177,237,232", "109,67,90", "53,45,57"],
+                ["54,65,62", "93,94,96", "141,141,146", "190,178,200"],
+                ["73,56,67", "93,152,142", "160,178,166", "234,189,168"],
+                ["16,25,53", "154,212,214", "86,71,135", "219,203,216"]
+            ]
+
+            const palette = palettes[Math.floor(Math.random() * palettes.length)];
+            console.log(palettes.indexOf(palette));
+
+            let grid = [];
+            let angle = 0;
+
+            function setup() {
+                createCanvas(w, h);
+                noStroke();
+
+                for (let i = 0; i < ROW; i++) {
+                    grid.push([]);
+                    for (let j = 0; j < COL; j++) {
+                        grid[i].push({
+                            x: j * sclX + (Math.random() * 50) - 35, 
+                            y: i * sclY + (Math.random() * 50) - 35 + sin(angle) * 15, 
+                            r: map(noise(i, j), 0, 1, 30, 160) + sin(angle) * 15, 
+                            o: map(noise(i, j), 0, 1, 40, 255),
+                            c: JSON.parse(`[${palette[Math.floor(Math.random() * palette.length)]}]`)
+                        });
+
+                        angle += 0.025;
+                    }   
+                }
+            }
+
+            function draw() {
+                background(255, 248, 240);
+
+                for (let i in grid) {
+                    for (let j in grid[i]) {
+                        let X = grid[i][j].x;
+                        let Y = grid[i][j].y;
+                        let R = grid[i][j].r;
+                        let rndColor = grid[i][j].c;
+
+                        if (X - R > 0 && X + R < w && Y - R > 0 && Y + R < h) {
+                            fill(rndColor[0], rndColor[1], rndColor[2], grid[i][j].o);
+                            ellipse(X, Y, R, R);
+                        } 
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
