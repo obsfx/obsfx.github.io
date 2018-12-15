@@ -50,7 +50,7 @@
             const h = 320;
 
             const COL = 15;
-            const ROW = 25;
+            const ROW = 20;
 
             const sclX = Math.floor(w / COL);
             const sclY = Math.floor(h / ROW);
@@ -77,16 +77,20 @@
                     grid.push([]);
                     for (let j = 0; j < COL; j++) {
                         grid[i].push({
-                            x: j * sclX + (Math.random() * 50) - 35, 
-                            y: i * sclY + (Math.random() * 50) - 35 + sin(angle) * 15, 
-                            r: map(noise(i, j), 0, 1, 30, 160) + sin(angle) * 15, 
-                            o: map(noise(i, j), 0, 1, 40, 255),
-                            c: JSON.parse(`[${palette[Math.floor(Math.random() * palette.length)]}]`)
+                            x: j * sclX + (Math.random() * sin(angle) * 20) - 10, 
+                            y: i * sclY + (Math.random() * sin(angle) * 60) - 30, 
+                            r: map(noise(i, j), 0, 1, 30, 120) + sin(-angle / Math.PI) * 20, 
+                            o: map(noise(i, j), 0, 1, 150, 255),
+                            c: JSON.parse(`[${palette[Math.floor(Math.random() * palette.length)]}]`),
+                            mv: Math.random() * 5 + 5,
+                            m: (i % 2 == 0) ? 1 : -1
                         });
 
-                        angle += 0.025;
+                        angle += 0.02;
                     }   
                 }
+
+                angle = 0;
             }
 
             function draw() {
@@ -94,17 +98,37 @@
 
                 for (let i in grid) {
                     for (let j in grid[i]) {
-                        let X = grid[i][j].x;
-                        let Y = grid[i][j].y;
+                        let X = grid[i][j].x + sin(angle) * grid[i][j].mv * grid[i][j].m;
+                        let Y = grid[i][j].y - sin(angle) * 10;
+                        let R = grid[i][j].r;
+                        let rndColor = grid[i][j].c;
+                        
+                        if (i > 0 && j > 0) {
+                            let X2 = grid[i - 1][j - 1].x + sin(angle) * grid[i - 1][j - 1].mv * grid[i - 1][j - 1].m;
+                            let Y2 = grid[i - 1][j - 1].y - sin(angle) * 10;
+
+                            strokeWeight(1);
+                            stroke(rndColor[0], rndColor[1], rndColor[2], grid[i][j].o - 125);
+                            line(X, Y, X2, Y2);
+                            noStroke();
+                        }
+                    }
+                }
+
+                for (let i in grid) {
+                    for (let j in grid[i]) {
+                        let X = grid[i][j].x + sin(angle) * grid[i][j].mv * grid[i][j].m;
+                        let Y = grid[i][j].y - sin(angle) * 10;
                         let R = grid[i][j].r;
                         let rndColor = grid[i][j].c;
 
-                        if (X - R > 0 && X + R < w && Y - R > 0 && Y + R < h) {
-                            fill(rndColor[0], rndColor[1], rndColor[2], grid[i][j].o);
-                            ellipse(X, Y, R, R);
-                        } 
+                        fill(rndColor[0], rndColor[1], rndColor[2], grid[i][j].o);
+                        ellipse(X, Y, R, R);
+
                     }
                 }
+
+                angle += 0.02;
             }
         </script>
     </body>
