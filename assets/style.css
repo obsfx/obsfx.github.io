@@ -6,8 +6,8 @@ body {
 
 canvas {
     position: absolute;
-    top: -100px;
-    left: -60px;
+    top: 0;
+    left: 0;
     z-index: -1;
 }
 
@@ -70,6 +70,7 @@ h6 span {
     margin-right: 10px;
     text-decoration: none;
     color: #011627;
+    background-color: #fff8f0
 }
 
 .links a::after {
@@ -207,7 +208,7 @@ h6 span {
     }
 
     canvas {
-        top: -150px;
-        left: -1300px;
+        top: -65px;
+        left: -1250px;
     }
 }
