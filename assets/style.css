@@ -2,6 +2,7 @@ body {
     background-color: #FFF8F0;
     color: #011627;
     overflow-x: hidden;
+    font-family: 'Nunito', sans-serif; 
 }
 
 canvas {
