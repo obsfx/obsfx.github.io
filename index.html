@@ -1,130 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css?family=Nunito:600|Playfair+Display:700" rel="stylesheet">
+        <title>ömercan balandı . @obsfx</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-        <link rel="stylesheet" href="assets/normalize.min.css">
-        <link rel="stylesheet" href="assets/style.css">
-        <title>Ömercan Balandı | @obsfx</title>
-        <style>
-            
-        </style>
+        <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-
         <div class="container">
-            <div class="item">
-                <h3 class="headtext">ömercan balandı</h3>
-                <h6 class="headtext">i'm studying <span>computer science</span> at dokuz eylul university</h6>
-                <h6 class="link headtext"> <a href="https://obsfx.github.io/">obsfx.github.io</a> </h6>
+            <div class="info">
+                <h1>Ömercan Balandı</h1>
+                <p>
+                    I'm 20 years old passionate developer who studying <span class="infotag">computer science</span>
+                    at <span class="infotag">dokuz eylul university</span>.
+                </p>
+
+                <p>
+                    I'm interested in 
+                    <span class="js">javascript</span> ,
+                    <span class="tag">front-end development</span> ,
+                    <span class="phaser">phaser.js</span> ,
+                    <span class="tag">game development</span> ,
+                    <span class="p5">p5.js</span> and 
+                    <span class="tag">creative coding</span>.
+                </p>
+
+                <div class="info-links">
+                    <a href="mailto:balandiomer@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://twitter.com/obsfx" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/obsfx" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://medium.com/@omercanbalandi" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    <a href="https://codepen.io/omercanbalandi" target="_blank"><i class="fab fa-codepen"></i></a>
+                    <a href="https://www.linkedin.com/in/omercanbalandi/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
 
-            <div class="links">
-                <a href="https://twitter.com/obsfx" target="_blank"><i class="fab fa-twitter"></i> @obsfx</a>
-                <a href="https://github.com/obsfx" target="_blank"><i class="fab fa-github"></i> @obsfx</a>
-                <a href="https://medium.com/@omercanbalandi" target="_blank"><i class="fab fa-medium-m"></i> @omercanbalandi</a>
-                <a href="https://codepen.io/omercanbalandi" target="_blank"><i class="fab fa-codepen"></i> @omercanbalandi</a>
-                <a href="https://www.linkedin.com/in/omercanbalandi/" target="_blank"><i class="fab fa-linkedin-in"></i> @omercanbalandi</a>
+            <div class="exp">
+                <h1>experiments</h1>
+
+                <div class="exp-items" id="expcon">
+
+                    
+
+                </div>
+
             </div>
 
-            <div class="item">
-                <h3>i'm interested in</h3>
-                <div id="tags"></div>
-            </div>
-
-            <div class="item mt60">
-                <h3>experiments</h3>
-                <div id="list"></div>
-            </div>
         </div>
 
-        <script src="assets/data.js"></script>
-        <script src="assets/script.js"></script>
-        <script src="assets/p5.min.js"></script>
-
-        <script>
-            const w = 1600;
-            const h = 280;
-
-            const COL = 15;
-            const ROW = 20;
-
-            const sclX = Math.floor(w / COL);
-            const sclY = Math.floor(h / ROW);
-
-            const palettes = [
-                ["187,190,100", "142,85,114", "188,170,153", "68,56,80"],
-                ["255,105,120", "177,237,232", "109,67,90", "53,45,57"],
-                ["54,65,62", "93,94,96", "141,141,146", "190,178,200"],
-                ["73,56,67", "93,152,142", "160,178,166", "234,189,168"],
-                ["16,25,53", "154,212,214", "86,71,135", "219,203,216"]
-            ]
-
-            const palette = palettes[Math.floor(Math.random() * palettes.length)];
-            console.log(palettes.indexOf(palette));
-
-            let grid = [];
-            let angle = 0;
-
-            function setup() {
-                createCanvas(w, h);
-                noStroke();
-
-                for (let i = 0; i < ROW; i++) {
-                    grid.push([]);
-                    for (let j = 0; j < COL; j++) {
-                        grid[i].push({
-                            x: j * sclX + (Math.random() * sin(angle) * 20) - 10, 
-                            y: i * sclY + (Math.random() * sin(angle) * 40) - 20, 
-                            r: map(noise(i, j), 0, 1, 20, 60) + sin(-angle / Math.PI) * 40, 
-                            o: map(noise(i, j), 0, 1, 150, 200),
-                            c: JSON.parse(`[${palette[Math.floor(Math.random() * palette.length)]}]`),
-                            mv: Math.random() * 5 + 5,
-                            m: (i % 2 == 0) ? 1 : -1
-                        });
-
-                        angle += 0.05;
-                    }   
-                }
-
-                angle = 0;
-            }
-
-            function draw() {
-                background(255, 248, 240);
-
-                for (let i in grid) {
-                    for (let j in grid[i]) {
-                        let X = grid[i][j].x;
-                        let Y = grid[i][j].y;
-                        let R = grid[i][j].r;
-                        let rndColor = grid[i][j].c;
-
-                        if (X - R > 0 && X + R < w && Y - R > 0 && Y + R < h) {
-                            if (i > 0 && j > 0) {
-                                let X2 = grid[i][j - 1].x;
-                                let Y2 = grid[i][j - 1].y;
-                                let R2 = grid[i][j - 1].r;
-
-                                if (X2 - R2 > 0 && X2 + R2 < w && Y2 - R2 > 0 && Y2 + R2 < h) {
-                                    strokeWeight(1);
-                                    stroke(0, 0, 0, 25);
-                                    line(X, Y, X2, Y2);
-                                    noStroke();
-                                }
-                            }
-
-                            fill(rndColor[0], rndColor[1], rndColor[2], grid[i][j].o);
-                            ellipse(X, Y, R, R);
-                        }
-                    }
-                }
-
-                angle += 0.02;
-            }
-        </script>
+        <script src="./js/data.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
