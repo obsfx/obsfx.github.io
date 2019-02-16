@@ -60,3 +60,29 @@ const projects = [
         img: "vue.gif"
     },
 ]
+
+const pens = [
+    `
+    <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js,result" data-user="omercanbalandi" data-slug-hash="xMQLmd" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Visualization of recursive backtracker maze generation algorithm.">
+    <span>See the Pen <a href="https://codepen.io/omercanbalandi/pen/xMQLmd/">
+    Visualization of recursive backtracker maze generation algorithm.</a> by Ömercan Balandı (<a href="https://codepen.io/omercanbalandi">@omercanbalandi</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    `,
+
+    `
+    <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js,result" data-user="omercanbalandi" data-slug-hash="ZwxERX" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Separating Axis Theorem: Visualization of collision detection of convex polygons">
+    <span>See the Pen <a href="https://codepen.io/omercanbalandi/pen/ZwxERX/">
+    Separating Axis Theorem: Visualization of collision detection of convex polygons</a> by Ömercan Balandı (<a href="https://codepen.io/omercanbalandi">@omercanbalandi</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    `,
+    
+    `
+    <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js,result" data-user="omercanbalandi" data-slug-hash="MLwMWd" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="sin(x) &amp;amp; cos(x) waves visualization with canvas2d">
+    <span>See the Pen <a href="https://codepen.io/omercanbalandi/pen/MLwMWd/">
+    sin(x) &amp; cos(x) waves visualization with canvas2d</a> by Ömercan Balandı (<a href="https://codepen.io/omercanbalandi">@omercanbalandi</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    `
+]

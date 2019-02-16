@@ -1,4 +1,5 @@
 const projects_ = document.getElementById("expcon");
+const pens_ = document.getElementById("penscon");
 
 for (let k in projects) {
     let i = projects.length - 1 - k;
@@ -52,4 +53,8 @@ for (let k in projects) {
         </div>
     </div>
     `;*/
+}
+
+for (let k in pens) {
+    pens_.innerHTML += pens[k];
 }
