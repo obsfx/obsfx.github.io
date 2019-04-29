@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="./assets/font/style.css" rel="stylesheet">
+        <title>ld44</title>
+        <style>
+            body {
+                background-color: #f8f8f8;
+            }
+
+            canvas {
+                position: absolute;
+                top: 100px;
+                left: 50%;
+                transform: translate(-50%, 0%); 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fontLoader" style="font-family: I pixel u; position: absolute;
+        left: -1000px;
+        visibility: hidden;">-----LOAD-----</div>
+        <div id="content"></div>
+        <script src="lib/phaser.min.js"></script>
+        <script src="build/game.js"></script>
+        <script> run(); </script>
+    </body>
+</html>
