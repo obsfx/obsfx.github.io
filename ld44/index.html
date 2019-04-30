@@ -16,6 +16,27 @@
                 top: 100px;
                 left: 50%;
                 transform: translate(-50%, 0%); 
+                border: 3px solid rgb(228, 228, 228);
+            }
+
+            .info {
+                text-align: center;
+            }
+
+            .info ul li {
+                display: inline-block;
+                list-style: none;
+                font-family: I pixel u;
+                margin-left: 10px;
+                font-size: 18px;
+            }
+
+            .info ul li a {
+                color: #e91e63;
+            }
+
+            .info ul li a:hover {
+                color: #00bcd4;
             }
         </style>
     </head>
@@ -23,7 +44,15 @@
         <div class="fontLoader" style="font-family: I pixel u; position: absolute;
         left: -1000px;
         visibility: hidden;">-----LOAD-----</div>
-        <div id="content"></div>
+        <div id="content">
+            <div class="info">
+                <ul>
+                    <li><a href="https://github.com/obsfx/ld44-danger-in-the-snow">source code</a></li>
+                    <li><a href="https://ldjam.com/events/ludum-dare/44/danger-in-the-snow">ldjam page</a></li>
+                    <li><a href="https://ldjam.com/events/ludum-dare/44/danger-in-the-snow">twitter.com/obsfx</a></li>
+                </ul>
+            </div>
+        </div>
         <script src="lib/phaser.min.js"></script>
         <script src="build/game.js"></script>
         <script> run(); </script>
