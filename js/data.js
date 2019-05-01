@@ -59,6 +59,15 @@ const projects = [
         source: "https://github.com/obsfx/vuejs-practices", 
         img: "vue.gif"
     },
+
+    {
+        tags: ["javascript", "phaser.io", "game development", "ludum dare 44"], 
+        name: "danger in the snow", 
+        desc: "a basic turn-based game created in 48 hours for LD44.",
+        source: "https://github.com/obsfx/ld44-danger-in-the-snow", 
+        live: "https://obsfx.github.io/ld44",
+        img: "ld44.gif"
+    },
 ]
 
 const pens = [
