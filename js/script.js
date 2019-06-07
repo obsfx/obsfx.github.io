@@ -8,11 +8,11 @@ for (let k in projects) {
     let livelink = "";
 
     if (projects[i].source) {
-        sourcelink = `<a href="${projects[i].source}" target="_blank">source code</a>`;
+        sourcelink = `<a href="${projects[i].source}" target="_blank"><i class="fas fa-code-branch"></i> source code</a>`;
     }
 
     if (projects[i].live) {
-        livelink = `<a href="${projects[i].live}" target="_blank">live demo</a>`;
+        livelink = `<a href="${projects[i].live}" target="_blank"><i class="fas fa-star-of-life"></i> live demo</a>`;
     }
 
     projects_.innerHTML += `
