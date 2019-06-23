@@ -13,7 +13,7 @@
 
             canvas {
                 position: absolute;
-                top: 100px;
+                top: 140px;
                 left: 50%;
                 transform: translate(-50%, 0%); 
                 border: 3px solid rgb(228, 228, 228);
@@ -21,13 +21,13 @@
 
             .info {
                 text-align: center;
+                font-family: I pixel u;
             }
 
             .info ul li {
                 display: inline-block;
                 list-style: none;
-                font-family: I pixel u;
-                margin-left: 10px;
+                padding: 0px 2px;
                 font-size: 18px;
             }
 
@@ -37,6 +37,15 @@
 
             .info ul li a:hover {
                 color: #00bcd4;
+            }
+
+            .controls span {
+                padding: 5px 10px;
+                border: 2px solid #000;
+                border-radius: 5px;
+                -webkit-box-shadow: -2px 2px 0px -1px #000;
+                -moz-box-shadow: -2px 2px 0px -1px #000;
+                box-shadow: -2px 2px 0px -1px #000;
             }
         </style>
     </head>
@@ -51,6 +60,10 @@
                     <li><a href="https://ldjam.com/events/ludum-dare/44/danger-in-the-snow">ldjam page</a></li>
                     <li><a href="https://twitter.com/obsfx">twitter.com/obsfx</a></li>
                 </ul>
+                <p>controls</p>
+                <div class="controls">
+                    <span>W</span> <span>A</span> <span>S</span> <span>D</span> & mouse for selection
+                </div>
             </div>
         </div>
         <script src="lib/phaser.min.js"></script>
