@@ -4,8 +4,8 @@ const projects = [
         name: "spaceinvaders.js", 
         desc: "my first game development experiment which i created without any game development framework. i only used canvas 2d api.",
         source: "https://github.com/obsfx/spaceinvaders.js", 
-        live: "https://obsfx.github.io/spaceinvadersjs",
-        img: "si.gif"
+        live: "https://obsfx.github.io/games/others/spaceinvadersjs",
+        img: "imgs/games/others/spaceinvaders.gif"
     },
 
     {
@@ -13,8 +13,8 @@ const projects = [
         desc: "i created this game and all game content during ludum dare 42 game jam in 48 hours with p5.js library.",
         name: "backSpace-x", 
         source: "https://github.com/obsfx/ld42-backspace-x", 
-        live: "https://obsfx.github.io/backspacex",
-        img: "bx.jpg"
+        live: "https://obsfx.github.io/games/jams/ld42_backspacex",
+        img: "imgs/games/jams/ld42.jpg"
     },
 
     {
@@ -22,8 +22,8 @@ const projects = [
         name: "tetris.js", 
         desc: "a tetris clone which i created with only vanilla javascript.",
         source: "https://github.com/obsfx/tetris-js", 
-        live: "https://obsfx.github.io/tetrisjs",
-        img: "tetris.gif"
+        live: "https://obsfx.github.io/games/others/tetrisjs",
+        img: "imgs/games/others/tetris.gif"
     },
 
     {
@@ -32,7 +32,7 @@ const projects = [
         desc : "javascript/p5js version of daniel shiffman's 3D projection coding challenge.",
         source: "https://github.com/obsfx/3DRotation-p5js", 
         live: "https://obsfx.github.io/3dprojection",
-        img: "3d.gif"
+        img: "imgs/jsworks/3d.gif"
     },
 
     {
@@ -40,7 +40,7 @@ const projects = [
         name: "creative coding expirements with p5.js", 
         desc: "i am trying to learn fundamentals of creative coding and trying to make simple animations with p5.js library. you can find that animations in this github repo.",
         source: "https://github.com/obsfx/creativecoding-practices-with-p5js/",
-        img: "cc.gif"
+        img: "imgs/creative_coding_cover.gif"
     },
 
     {
@@ -48,8 +48,8 @@ const projects = [
         name: "purgatory", 
         desc: "i made this game and all game content during ludum dare 43 game jam for compo mode with phaser library.",
         source: "https://github.com/obsfx/ld43-purgatory", 
-        live: "https://obsfx.github.io/purgatory",
-        img: "pg.jpg"
+        live: "https://obsfx.github.io/games/jams/ld43_purgatory",
+        img: "imgs/games/jams/ld43.jpg"
     },
 
     {
@@ -57,7 +57,7 @@ const projects = [
         name: "vuejs practices", 
         desc: "some small web apps which i created to learn basics of vuejs.",
         source: "https://github.com/obsfx/vuejs-practices", 
-        img: "vue.gif"
+        img: "imgs/jsworks/vue.gif"
     },
 
     {
@@ -65,8 +65,8 @@ const projects = [
         name: "danger in the snow", 
         desc: "a basic turn-based game created in 48 hours for LD44.",
         source: "https://github.com/obsfx/ld44-danger-in-the-snow", 
-        live: "https://obsfx.github.io/ld44",
-        img: "ld44.gif"
+        live: "https://obsfx.github.io/games/jams/ld44_dangerinthesnow",
+        img: "imgs/games/jams/ld44.gif"
     },
 ]
 

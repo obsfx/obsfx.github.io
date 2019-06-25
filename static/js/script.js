@@ -18,7 +18,7 @@ for (let k in projects) {
     projects_.innerHTML += `
         <div class="exp-items-item">
             <div class="exp-items-item-showcase">
-                <img src="./assets/${projects[i].img}">
+                <img src="./static/${projects[i].img}">
             </div>
 
             <div class="exp-items-item-head">
