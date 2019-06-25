@@ -7,59 +7,40 @@
 
         <title>purple - creative coding / @obsfx</title>
 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500,500i,700">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-        <link rel="stylesheet" href="https://obsfx.github.io/assets/style.css">
-
+        <link rel="stylesheet" href="../creative_coding.css">
+        
         <style>
-            canvas {
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-            }
 
             body {
                 background-color: #58355E;
+                font-family: 'IBM Plex Mono', monospace;
                 color: rgb(247, 127, 0);
             }
 
-            .p5_tag {
-                font-weight: bold;
-            }
-
-            .p5_tag::after {
-                background-color: #ff719a !important;
-            }
-
-            .con {
-                position: relative;
-                z-index: 999999;
-            }
-
-            .b a::after {
-                background-color: #3F51B5;
-            }
         </style>
     </head>
     <body>
 
-        <div class="con">
-            <div class="a">purple</div>
-            <div class="b" style="margin: 0px;"> 
-                <span><a style="color: white" href="https://twitter.com/obsfx" target="_blank"><i class="fab fa-twitter"></i> @obsfx</a></span>
+        <div class="creative_coding_info_container">
+            <div>purple</div>
+            <div>
+                <a href="https://twitter.com/obsfx"> 
+                    <i class="fab fa-twitter"></i> @obsfx
+                </a>
             </div>
-            <div class="a_b"><a style="color: red" href="https://obsfx.github.io">obsfx.github.io</a></div>
-            <div class="b a_c" style="margin-bottom: 0px;">
-                <div class="a_b">creative coding practice <strong>#7</strong></div>
-                <div class="a_b">created with <a style="color: #f4f4f4;" href="https://p5js.org/" class="p5_tag">p5js</a></div>
+            <div>
+                <a href="https://obsfx.github.io">obsfx.github.io</a>
             </div>
-
-            <div class="a_b">
-                <a style="color: red" href="https://github.com/obsfx/creativecoding-practices-with-p5js/tree/master/7_purple">Source</a>
+            <div>
+                <div>creative coding practice <strong>#6</strong></div>
+                <div>created with <a href="https://p5js.org/">p5js</a></div>
+                <div><a href="https://github.com/obsfx/creativecoding-practices-with-p5js/tree/master/6_purple">Source</a></div>
             </div>
         </div>
 
-        <script src="../assets/p5.min.js"></script>
-        <script src="js/purple.min.js"></script>
+        <script src="../p5.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
