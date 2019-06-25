@@ -31,7 +31,7 @@ const projects = [
         name: "3D Projection", 
         desc : "javascript/p5js version of daniel shiffman's 3D projection coding challenge.",
         source: "https://github.com/obsfx/3DRotation-p5js", 
-        live: "https://obsfx.github.io/3dprojection",
+        live: "https://obsfx.github.io/jsworks/3dprojection",
         img: "imgs/jsworks/3d.gif"
     },
 
