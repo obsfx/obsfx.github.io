@@ -56,5 +56,5 @@ for (let k in projects) {
 }
 
 for (let k in pens) {
-    pens_.innerHTML += pens[k];
+    pens_.innerHTML += pens[pens.length - 1 - k];
 }

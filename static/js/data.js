@@ -93,5 +93,32 @@ const pens = [
     sin(x) &amp; cos(x) waves visualization with canvas2d</a> by Ömercan Balandı (<a href="https://codepen.io/omercanbalandi">@omercanbalandi</a>)
     on <a href="https://codepen.io">CodePen</a>.</span>
     </p>
+    `,
+
+    `
+    <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="css,result" data-user="omercanbalandi" data-slug-hash="EGqogq" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="waving circles - pure css animation">
+    <span>See the Pen <a href="https://codepen.io/omercanbalandi/pen/EGqogq">
+    waving circles - pure css animation</a> by Ömercan Balandı (<a href="https://codepen.io/omercanbalandi">@omercanbalandi</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    `,
+
+    `
+    <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js,result" data-user="omercanbalandi" data-slug-hash="zYYGowP" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Waves Inside The Circle">
+    <span>See the Pen <a href="https://codepen.io/omercanbalandi/pen/zYYGowP">
+    Waves Inside The Circle</a> by Ömercan Balandı (<a href="https://codepen.io/omercanbalandi">@omercanbalandi</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    `,
+
+    `
+    <p class="codepen" data-height="265" data-theme-id="light" data-default-tab="js,result" data-user="omercanbalandi" data-slug-hash="QXXxdX" data-preview="true" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Zdog - Minimal Lighthouse  Animation">
+    <span>See the Pen <a href="https://codepen.io/omercanbalandi/pen/QXXxdX">
+    Zdog - Minimal Lighthouse  Animation</a> by Ömercan Balandı (<a href="https://codepen.io/omercanbalandi">@omercanbalandi</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
     `
 ]
