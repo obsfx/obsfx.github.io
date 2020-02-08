@@ -1,45 +1,58 @@
 const projects_ = document.getElementById("expcon");
-const pens_ = document.getElementById("penscon");
+// const pens_ = document.getElementById("penscon");
 
 for (let k in projects) {
     let i = projects.length - 1 - k;
 
-    let sourcelink = "";
-    let livelink = "";
+    let list = "";
 
-    if (projects[i].source) {
-        sourcelink = `<a href="${projects[i].source}" target="_blank"><i class="fas fa-code-branch"></i> source code</a>`;
-    }
-
-    if (projects[i].live) {
-        livelink = `<a href="${projects[i].live}" target="_blank"><i class="fas fa-star-of-life"></i> live demo</a>`;
-    }
-
+    projects[i].buttons.forEach(e => {
+        list += `<li><a target="_blank" href="${e.link}">→ ${e.text}</a></li>`
+    });
+    
     projects_.innerHTML += `
-        <div class="exp-items-item">
-            <div class="exp-items-item-showcase">
-                <img src="./static/${projects[i].img}">
-            </div>
+        <r-cell span=1 class="entity">
+            <r-grid columns=3 class="experiments">
+                <r-cell span=3>
+                    <img src="./static/${projects[i].img}">
+                </r-cell>
 
-            <div class="exp-items-item-head">
-                <h2>${projects[i].name}</h2>
-                <p>${projects[i].desc}</p>
-            </div>
-
-            <div class="exp-items-item-bottom">
-                <h5>related topics</h5>
-
-                <div class="exp-items-item-bottom-tags">
-                    <span>${projects[i].tags.join("</span><span>")}</span>
-                </div>
-            </div>
-
-            <div class="exp-items-item-links">
-                ${sourcelink}
-                ${livelink}
-            </div>
-        </div>
+                <r-cell span=3>
+                    <h3>${projects[i].name}</h3>
+                    <p>— ${projects[i].desc}</p>
+                    <ul>
+                        ${list}
+                    </ul>
+                </r-cell>
+            </r-grid>
+        </r-cell>
     `;
+
+    // projects_.innerHTML += `
+    //     <div class="exp-items-item">
+    //         <div class="exp-items-item-showcase">
+    //             <img src="./static/${projects[i].img}">
+    //         </div>
+
+    //         <div class="exp-items-item-head">
+    //             <h2>${projects[i].name}</h2>
+    //             <p>${projects[i].desc}</p>
+    //         </div>
+
+    //         <div class="exp-items-item-bottom">
+    //             <h5>related topics</h5>
+
+    //             <div class="exp-items-item-bottom-tags">
+    //                 <span>${projects[i].tags.join("</span><span>")}</span>
+    //             </div>
+    //         </div>
+
+    //         <div class="exp-items-item-links">
+    //             ${sourcelink}
+    //             ${livelink}
+    //         </div>
+    //     </div>
+    // `;
 
     /*projects_.innerHTML += `
     <div class="ex">
@@ -55,6 +68,6 @@ for (let k in projects) {
     `;*/
 }
 
-for (let k in pens) {
-    pens_.innerHTML += pens[pens.length - 1 - k];
-}
+// for (let k in pens) {
+//     pens_.innerHTML += pens[pens.length - 1 - k];
+// }

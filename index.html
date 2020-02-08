@@ -6,67 +6,72 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>ömercan balandı . @obsfx</title>
         
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <link rel="stylesheet" href="./static/font/inter.css">
+        <link rel="stylesheet" href="./static/css/raster2.css">
         <link rel="stylesheet" href="./static/css/main.css">
     </head>
     <body>
-        <div class="container">
-            <div class="head">
-                <div class="block picture">
+
+        <r-grid columns=1 class="container">
+            <r-grid columns=3 class="head">
+                <r-cell span=1 span-s=2 class="profile-picture">
                     <img src="./static/imgs/pp.jpg" alt="obsfx">
-                </div>
-
-
-                <div class="info">
+                </r-cell>
+                <r-cell span=2 span-s=3 class="info">
                     <h1>Ömercan Balandı</h1>
                     <p>
-                        I'm 21 years old passionate developer who is studying <span class="infotag">computer science</span> at <span class="infotag">dokuz eylul university</span>.
+                        — I'm 21 years old passionate developer who is studying <strong>computer science</strong> at <strong>dokuz eylul university</strong>.
                     </p>
-                    
                     <p>
-                        I'm interested in 
-                        <span class="tag js">javascript</span>,
-                        <span class="tag fe">front-end development</span>,
-                        <span class="tag gd">game development</span> &
-                        <span class="tag cc">creative coding</span>.
+                        — I generally work with <span class="js">JavaScript</span>. I'm interested in creating <i>interactive things</i> like <span class="games">games</span>, <span class="animations">animations</span> and <span class="visualizations">visualizations</span>.
+                        You can find some of them at my <i>codepen</i> and <i>github</i>.
                     </p>
+                    <div class="media">
+                        <ul>
+                            <li>
+                                <a href="mailto:balandiomer@gmail.com" target="_blank">balandiomer@gmail.com</a>
+                            </li>
 
-                    <div class="info-links">
-                        <a href="mailto:balandiomer@gmail.com"><i class="fas fa-envelope"></i></a>
-                        <a href="https://twitter.com/obsfx" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://github.com/obsfx" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://medium.com/@omercanbalandi" target="_blank"><i class="fab fa-medium-m"></i></a>
-                        <a href="https://codepen.io/omercanbalandi" target="_blank"><i class="fab fa-codepen"></i></a>
-                        <a href="https://www.linkedin.com/in/omercanbalandi/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <li>
+                                <a href="https://www.linkedin.com/in/omercanbalandi/" target="_blank">linkedin.com/in/omercanbalandi</a>
+                            </li>
+
+                            <li>
+                                <a href="https://twitter.com/obsfx" target="_blank">twitter.com/obsfx</a>
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/obsfx" target="_blank">github.com/obsfx</a>
+                            </li>
+
+                            <li>
+                                <a href="https://codepen.io/omercanbalandi" target="_blank">codepen.io/omercanbalandi</a>
+                            </li>
+
+                            <li>
+                                <a href="https://obsfx.itch.io/" target="_blank">obsfx.itch.io</a>
+                            </li>
+
+                            <li>
+                                <a href="https://dev.to/obsfx" target="_blank">dev.to/obsfx</a>
+                            </li>
+
+                            <li>
+                                <a href="https://medium.com/@omercanbalandi" target="_blank">medium.com/@omercanbalandi</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-            </div>
+                </r-cell>
+            </r-grid>
 
-            <div class="exp">
-                    <h2> <i class="far fa-paper-plane"></i> experiments </h2>
-    
-                    <div class="exp-items" id="expcon">
-    
-                        
-    
-                    </div>
-    
-            </div>
+            <r-grid columns=3 columns-s=2 class="experiments" id="expcon">
+                <r-cell span=3 span-s=2>
+                    <h1>— Experiments</h1>
+                </r-cell>
 
-            <div class="pens">
-                <h2> <i class="fab fa-codepen"></i> codepen </h2>
-
-                <div id="penscon">
-                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-                </div>
-            </div>
-
-            <div class="footer">  
-                <div> <i class="fas fa-infinity"></i> </div>
-                <p>infinity</p>
-            </div>
-        </div>
+            </r-grid>
+        </r-grid>
 
         <script src="./static/js/data.js"></script>
         <script src="./static/js/script.js"></script>
