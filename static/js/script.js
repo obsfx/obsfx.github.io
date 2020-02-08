@@ -18,7 +18,7 @@ for (let k in projects) {
                 </r-cell>
 
                 <r-cell span=3>
-                    <h3>${projects[i].name}</h3>
+                    <h4>${projects[i].name}</h4>
                     <p>— ${projects[i].desc}</p>
                     <ul>
                         ${list}
