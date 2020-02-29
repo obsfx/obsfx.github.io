@@ -107,6 +107,16 @@ const projects = [
             { text: "itch.io Page", link: "https://obsfx.itch.io/medieval-express" }
         ]
     },
+
+    {
+        name: "console8", 
+        desc: "console8 is yet another chip8 emulator but works on your command line. console8 simply uses your command line to render the graphics and does not require any GUI.",
+        img: "imgs/jsworks/console8.gif",
+        buttons: [
+            { text: "github", link: "https://github.com/obsfx/console8" },
+            { text: "NPM", link: "https://www.npmjs.com/package/console8" }
+        ]
+    },
 ]
 
 // const pens = [
