@@ -8,25 +8,26 @@
         
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
         <link rel="stylesheet" href="./static/font/inter.css">
-        <link rel="stylesheet" href="./static/css/raster2.css">
         <link rel="stylesheet" href="./static/css/main.css">
     </head>
     <body>
 
-        <r-grid columns=1 class="container">
-            <r-grid columns=3 class="head">
-                <r-cell span=1 span-s=2 class="profile-picture">
+        <div class="container">
+            <div class="head">
+                <div class="profile-picture">
                     <img src="./static/imgs/pp.jpg" alt="obsfx">
-                </r-cell>
-                <r-cell span=2 span-s=3 class="info">
+                </div>
+
+                <div class="info">
                     <h1>Ömercan Balandı</h1>
                     <p>
                         — I'm 21 years old passionate developer who is studying <strong>computer science</strong> at <strong>dokuz eylul university</strong>.
                     </p>
                     <p>
-                        — I generally work with <span class="js">JavaScript</span>. I'm interested in creating <i>interactive things</i> like <span class="games">games</span>, <span class="animations">animations</span> and <span class="visualizations">visualizations</span>.
-                        You can find some of them at my <i>codepen</i> and <i>github</i>.
+                        — I generally work with <span class="js">JavaScript</span>. I'm interested in creating convenient <i>command line tools</i> and <i>interactive things</i> like <span class="games">games</span>, <span class="animations">animations</span> and <span class="visualizations">visualizations</span>.
+                        You can find some of them at my <a href="https://codepen.io/omercanbalandi">codepen</a> and <a href="https://github.com/obsfx">github</a>.
                     </p>
+
                     <div class="media">
                         <ul>
                             <li>
@@ -62,16 +63,34 @@
                             </li>
                         </ul>
                     </div>
-                </r-cell>
-            </r-grid>
+                </div>
+            </div>
 
-            <r-grid columns=3 columns-s=2 class="experiments" id="expcon">
-                <r-cell span=3 span-s=2>
-                    <h1>— Experiments</h1>
-                </r-cell>
+            <div class="experiments">
+                <h1>Experiments</h1>
 
-            </r-grid>
-        </r-grid>
+                <div class="tools">
+                    <h2>— Tools</h2>
+
+                    <ul class="toolslist">
+                    </ul>
+                </div>
+
+                <div class="games">
+                    <h2>— Games</h2>
+
+                    <ul class="gamelist">
+                    </ul>
+                </div>
+
+                <div class="other">
+                    <h2>— Other Things</h2>
+
+                    <ul class="othertoolist">
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <script src="./static/js/data.js"></script>
         <script src="./static/js/script.js"></script>

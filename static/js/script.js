@@ -1,5 +1,11 @@
-const projects_ = document.getElementById("expcon");
+// const projects_ = document.getElementById("expcon");
+
+const tools = document.querySelector(".tools ul");
+const games = document.querySelector(".games ul");
+const other = document.querySelector(".other ul");
 // const pens_ = document.getElementById("penscon");
+
+let sec = { tools, games, other };
 
 for (let k in projects) {
     let i = projects.length - 1 - k;
@@ -7,26 +13,36 @@ for (let k in projects) {
     let list = "";
 
     projects[i].buttons.forEach(e => {
-        list += `<li><a target="_blank" href="${e.link}">→ ${e.text}</a></li>`
+        list += `<a href="${e.link}" target="_blank"> ${e.text}</a>`;
     });
-    
-    projects_.innerHTML += `
-        <r-cell span=1 class="entity">
-            <r-grid columns=3 class="experiments">
-                <r-cell span=3>
-                    <img src="./static/${projects[i].img}">
-                </r-cell>
 
-                <r-cell span=3>
-                    <h4>${projects[i].name}</h4>
-                    <p>— ${projects[i].desc}</p>
-                    <ul>
-                        ${list}
-                    </ul>
-                </r-cell>
-            </r-grid>
-        </r-cell>
-    `;
+    let template = `
+    <li>
+        <i>${projects[i].name}</i>
+        <span>${projects[i].desc}</span>
+        ${list}
+    </li>
+    `
+
+    sec[projects[i].type].innerHTML += template;
+    
+    // projects_.innerHTML += `
+    //     <r-cell span=1 class="entity">
+    //         <r-grid columns=3 class="experiments">
+    //             <r-cell span=3>
+    //                 <img src="./static/${projects[i].img}">
+    //             </r-cell>
+
+    //             <r-cell span=3>
+    //                 <h4>${projects[i].name}</h4>
+    //                 <p>— ${projects[i].desc}</p>
+    //                 <ul>
+    //                     ${list}
+    //                 </ul>
+    //             </r-cell>
+    //         </r-grid>
+    //     </r-cell>
+    // `;
 
     // projects_.innerHTML += `
     //     <div class="exp-items-item">

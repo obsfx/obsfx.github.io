@@ -1,5 +1,6 @@
 const projects = [
     {
+        type: "games",
         tags: ["javascript", "game development"], 
         name: "spaceinvaders.js", 
         desc: "My first game development experiment that i created without any game development framework. I only used canvas 2d api.",
@@ -11,6 +12,7 @@ const projects = [
     },
 
     {
+        type: "other",
         tags: ["javascript", "p5.js", "ludum dare 42", "game development"], 
         desc: "I created this game and all game content during ludum dare 42 game jam in 48 hours with p5.js library.",
         name: "backSpace-x", 
@@ -23,6 +25,7 @@ const projects = [
     },
 
     {
+        type: "games",
         tags: ["javascript", "game development"], 
         name: "tetris.js", 
         desc: "A tetris clone that i created with only vanilla javascript.",
@@ -34,6 +37,7 @@ const projects = [
     },
 
     {
+        type: "other",
         tags: ["javascript", "p5.js", "matrix multiplication"], 
         name: "3D Projection", 
         desc : "JavaScript/p5js version of Daniel Shiffman's 3D projection coding challenge.",
@@ -45,6 +49,7 @@ const projects = [
     },
 
     {
+        type: "other",
         tags: ["javascript", "p5js", "creative coding"], 
         name: "Creative coding expirements with p5.js", 
         desc: "I'm trying to learn fundamentals of creative coding and trying to make simple animations with p5.js library. You can find all of them in this github repo.",
@@ -55,6 +60,7 @@ const projects = [
     },
 
     {
+        type: "games",
         tags: ["javascript", "phaser", "game development", "ludum dare 43"], 
         name: "Purgatory", 
         desc: "I made this game and all game content during ludum dare 43 game jam for compo mode with phaser library.",
@@ -67,6 +73,7 @@ const projects = [
     },
 
     {
+        type: "games",
         tags: ["javascript", "phaser.io", "game development", "ludum dare 44"], 
         name: "Danger In The Snow", 
         desc: "A basic turn-based game created in 48 hours for LD44.",
@@ -79,16 +86,7 @@ const projects = [
     },
 
     {
-        name: "Libgen CLI Downloader", 
-        desc: "A simple tool to search and download ebooks from libgen via command line interface.",
-        img: "imgs/jsworks/libgen_downloader.jpg",
-        buttons: [
-            { text: "github", link: "https://github.com/obsfx/libgen-cli-downloader" },
-            { text: "NPM", link: "https://www.npmjs.com/package/libgen-downloader" }
-        ]
-    },
-
-    {
+        type: "other",
         name: "Dungrain", 
         desc: "BSP based procedural dungeon generation package.",
         img: "imgs/jsworks/dungrain.png",
@@ -99,6 +97,7 @@ const projects = [
     },
 
     {
+        type: "games",
         name: "Medieval Express", 
         desc: "A turn-based rogue-like \"package shifting\" game that was created in 2KB.",
         img: "imgs/games/medex.gif",
@@ -109,12 +108,35 @@ const projects = [
     },
 
     {
+        type: "tools",
         name: "console8", 
         desc: "console8 is yet another chip8 emulator but works on your command line. console8 simply uses your command line to render the graphics and does not require any GUI.",
         img: "imgs/jsworks/console8.gif",
         buttons: [
             { text: "github", link: "https://github.com/obsfx/console8" },
             { text: "NPM", link: "https://www.npmjs.com/package/console8" }
+        ]
+    },
+
+    {
+        type: "games",
+        name: "Zero", 
+        desc: "zero is a small, short shooting game that was created in 48 hours with pico8/lua for ludum dare 46 game.",
+        img: "imgs/games/zero.gif",
+        buttons: [
+            { text: "github", link: "https://github.com/obsfx/zero-ld46" }
+        ]
+    },
+
+    {
+        type: "tools",
+        name: "Libgen Downloader", 
+        desc: "A simple tool to search and download ebooks from libgen via command line interface.",
+        img: "imgs/jsworks/libgen_downloader.jpg",
+        buttons: [
+            { text: "web page", link: "https://obsfx.github.io/libgen-downloader/" },
+            { text: "github", link: "https://github.com/obsfx/libgen-downloader" },
+            { text: "NPM", link: "https://www.npmjs.com/package/libgen-downloader" }
         ]
     },
 ]
