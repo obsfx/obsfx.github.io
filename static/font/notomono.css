@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'noto_monoregular';
+    src: url('NotoMono-Regular-webfont.eot');
+    src: url('NotoMono-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('NotoMono-Regular-webfont.woff2') format('woff2'),
+         url('NotoMono-Regular-webfont.woff') format('woff'),
+         url('NotoMono-Regular-webfont.ttf') format('truetype'),
+         url('NotoMono-Regular-webfont.svg#noto_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

@@ -3,24 +3,24 @@ const projects = [
         type: "games",
         tags: ["javascript", "game development"], 
         name: "spaceinvaders.js", 
-        desc: "My first game development experiment that i created without any game development framework. I only used canvas 2d api.",
+        desc: "My first game development experiment that i created without any game development framework. I only developed with canvas2d api.",
         img: "imgs/games/others/spaceinvaders.gif",
         buttons: [
             { text: "github", link: "https://github.com/obsfx/spaceinvaders.js" },
-            { text: "live", link: "https://obsfx.github.io/games/others/spaceinvadersjs" }
+            { text: "play", link: "https://obsfx.github.io/games/others/spaceinvadersjs" }
         ]
     },
 
     {
         type: "other",
         tags: ["javascript", "p5.js", "ludum dare 42", "game development"], 
-        desc: "I created this game and all game content during ludum dare 42 game jam in 48 hours with p5.js library.",
+        desc: "a simple space shooter game that i developed for ludum dare 42 in 48 hours with p5.js library.",
         name: "backSpace-x", 
         img: "imgs/games/jams/ld42.jpg",
         buttons: [
             { text: "LD42 Submission Page", link: "https://ldjam.com/events/ludum-dare/42/backspace-x" },
             { text: "github", link: "https://github.com/obsfx/ld42-backspace-x" },
-            { text: "live", link: "https://obsfx.github.io/games/jams/ld42_backspacex" }
+            { text: "play", link: "https://obsfx.github.io/games/jams/ld42_backspacex" }
         ]
     },
 
@@ -28,11 +28,11 @@ const projects = [
         type: "games",
         tags: ["javascript", "game development"], 
         name: "tetris.js", 
-        desc: "A tetris clone that i created with only vanilla javascript.",
+        desc: "yet another tetis clone that i developed just using vanilla javascript.",
         img: "imgs/games/others/tetris.gif",
         buttons: [
             { text: "github", link: "https://github.com/obsfx/tetris-js" },
-            { text: "live", link: "https://obsfx.github.io/games/others/tetrisjs" }
+            { text: "play", link: "https://obsfx.github.io/games/others/tetrisjs" }
         ]
     },
 
@@ -44,7 +44,7 @@ const projects = [
         img: "imgs/jsworks/3d.gif",
         buttons: [
             { text: "github", link: "https://github.com/obsfx/3DRotation-p5js" },
-            { text: "live", link: "https://obsfx.github.io/jsworks/3dprojection" }
+            { text: "demo", link: "https://obsfx.github.io/jsworks/3dprojection" }
         ]
     },
 
@@ -52,7 +52,7 @@ const projects = [
         type: "other",
         tags: ["javascript", "p5js", "creative coding"], 
         name: "Creative coding expirements with p5.js", 
-        desc: "I'm trying to learn fundamentals of creative coding and trying to make simple animations with p5.js library. You can find all of them in this github repo.",
+        desc: "some little animation loops that i created with p5.js library while i was trying to learn the fundamentals of creative coding.",
         img: "imgs/creative_coding_cover.gif",
         buttons: [
             { text: "github", link: "https://github.com/obsfx/creativecoding-practices-with-p5js/" }
@@ -63,12 +63,12 @@ const projects = [
         type: "games",
         tags: ["javascript", "phaser", "game development", "ludum dare 43"], 
         name: "Purgatory", 
-        desc: "I made this game and all game content during ludum dare 43 game jam for compo mode with phaser library.",
+        desc: "a top down shooter game that i developed with phaser.js library for ludum dare 43 game jam in 48 hours.",
         img: "imgs/games/jams/ld43.jpg",
         buttons: [
             { text: "LD43 Submission Page", link: "https://ldjam.com/events/ludum-dare/43/purgatory" },
             { text: "github", link: "https://github.com/obsfx/ld43-purgatory" },
-            { text: "live", link: "https://obsfx.github.io/games/jams/ld43_purgatory" }
+            { text: "play", link: "https://obsfx.github.io/games/jams/ld43_purgatory" }
         ]
     },
 
@@ -81,29 +81,29 @@ const projects = [
         buttons: [
             { text: "LD44 Submission Page", link: "https://ldjam.com/events/ludum-dare/44/danger-in-the-snow" },
             { text: "github", link: "https://github.com/obsfx/ld44-danger-in-the-snow" },
-            { text: "live", link: "https://obsfx.github.io/games/jams/ld44_dangerinthesnow" }
+            { text: "play", link: "https://obsfx.github.io/games/jams/ld44_dangerinthesnow" }
         ]
     },
 
     {
         type: "other",
         name: "Dungrain", 
-        desc: "BSP based procedural dungeon generation package.",
+        desc: "a javascript library using binary space partitioning to create procedurally generated dungeons.",
         img: "imgs/jsworks/dungrain.png",
         buttons: [
             { text: "github", link: "https://github.com/obsfx/dungrain" },
-            { text: "NPM", link: "https://www.npmjs.com/package/dungrain" }
+            { text: "npm", link: "https://www.npmjs.com/package/dungrain" }
         ]
     },
 
     {
         type: "games",
         name: "Medieval Express", 
-        desc: "A turn-based rogue-like \"package shifting\" game that was created in 2KB.",
+        desc: "A turn-based rogue-like \"package shifting\" game fits in only 2 kilobytes.",
         img: "imgs/games/medex.gif",
         buttons: [
             { text: "github", link: "https://github.com/obsfx/2kplus-jam-medieval-express" },
-            { text: "itch.io Page", link: "https://obsfx.itch.io/medieval-express" }
+            { text: "itch.io page", link: "https://obsfx.itch.io/medieval-express" }
         ]
     },
 
@@ -114,17 +114,20 @@ const projects = [
         img: "imgs/jsworks/console8.gif",
         buttons: [
             { text: "github", link: "https://github.com/obsfx/console8" },
-            { text: "NPM", link: "https://www.npmjs.com/package/console8" }
+            { text: "npm", link: "https://www.npmjs.com/package/console8" }
         ]
     },
 
     {
         type: "games",
         name: "Zero", 
-        desc: "zero is a small, short shooting game that was created in 48 hours with pico8/lua for ludum dare 46 game.",
+        desc: "zero is a small, short shooting game that was created in 48 hours with pico8/lua for ludum dare 46 game jam.",
         img: "imgs/games/zero.gif",
         buttons: [
-            { text: "github", link: "https://github.com/obsfx/zero-ld46" }
+            { text: "github", link: "https://github.com/obsfx/zero-ld46" },
+            { text: "ludum dare 46 submission page", link: "https://ldjam.com/events/ludum-dare/46/zero" },
+            { text: "play (48 hours version)", link: "https://obsfx.github.io/zero/" },
+            { text: "play (improved post-compo version)", link: "https://obsfx.github.io/zero/postcompo/" }
         ]
     },
 
@@ -136,7 +139,7 @@ const projects = [
         buttons: [
             { text: "web page", link: "https://obsfx.github.io/libgen-downloader/" },
             { text: "github", link: "https://github.com/obsfx/libgen-downloader" },
-            { text: "NPM", link: "https://www.npmjs.com/package/libgen-downloader" }
+            { text: "npm", link: "https://www.npmjs.com/package/libgen-downloader" }
         ]
     },
 ]
