@@ -12,7 +12,7 @@ const projects = [
     },
 
     {
-        type: "other",
+        type: "games",
         tags: ["javascript", "p5.js", "ludum dare 42", "game development"], 
         desc: "a simple space shooter game that i developed for ludum dare 42 in 48 hours with p5.js library.",
         name: "backSpace-x", 
