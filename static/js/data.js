@@ -86,7 +86,7 @@ const projects = [
     },
 
     {
-        type: "other",
+        type: "libs",
         name: "Dungrain", 
         desc: "a javascript library using binary space partitioning to create procedurally generated dungeons.",
         img: "imgs/jsworks/dungrain.png",

@@ -1,8 +1,9 @@
 const tools = document.querySelector(".tools ul");
 const games = document.querySelector(".games ul");
 const other = document.querySelector(".other ul");
+const libs = document.querySelector(".libs ul");
 
-let sec = { tools, games, other };
+let sec = { tools, games, other, libs };
 
 for (let k in projects) {
     let i = projects.length - 1 - k;
