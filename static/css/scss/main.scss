@@ -21,8 +21,9 @@ body {
 }
 
 .container {
-    max-width: 600px;
-    margin: 20px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
 
     .link {
         color: $black;
@@ -38,24 +39,32 @@ body {
 
     .head {
         padding-top: 20px;
-        max-width: 600px;
+        width: 100%;
         display: flex;
+        flex-direction: column;
     }
 
     .profile-picture {
-        flex-grow: 2;
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
 
         img {
             width: 100%;
             border-radius: 10px;
         }
     }
+    
+    h1, h2 {
+        text-align: center;
+    }
 
     h1 {
         padding: 0;
         margin: 0;
-        letter-spacing: -3px;
-        font-size: 45px;
+        letter-spacing: -1px;
+        font-size: 36px;
         color: $black;
         margin-bottom: 15px;
     }
@@ -63,7 +72,7 @@ body {
     h2 {
         padding: 0;
         margin: 0;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         font-size: 20px;
         font-weight: normal;
         color: $black;
@@ -77,31 +86,36 @@ body {
 
         .things {
             font-weight: normal;
+            font-family: 'IBM Plex Mono';
             font-size: 14px;
-            font-family: 'noto_monoregular', monospace;
+            background: $grey2;
         }
 
         .media {
-            ul li a {
-                font-size: 14px;
-                color: $black;
+            ul {
+                margin-left: -20px;
 
-                &:hover {
-                    background-color: $yellow;
+                li a {
+                    font-size: 14px;
+                    color: $black;
+
+                    &:hover {
+                        background-color: $yellow;
+                    }
                 }
             }
         }
 
         p {
             color: $black;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 22px;
 
             span {
                 display: inline-block;
                 // vertical-align: baseline;
                 font-weight: bold;
-                line-height: 16px;
+                line-height: 12px;
 
                 // font-family:  'noto_monoregular', monospace;
 
@@ -129,18 +143,17 @@ body {
             div {
                 border: none;
                 font-size: 14px;
-                font-weight: bold;
                 // text-decoration: underline;
                 display: inline;
                 text-transform: lowercase;
                 padding: 0px 4px;
-                background-color: $yellow;
+                background-color: $grey2;
                 font-family: 'noto_monoregular', monospace;
             }
 
             span {
                 color: $black;
-                font-size: 16px;
+                font-size: 14px;
                 line-height: 22px;
                 margin-left: 5px;
                 text-transform: lowercase;
@@ -152,7 +165,7 @@ body {
                 margin: 0px;
                 margin-top: 5px;
                 padding-top: 5px;
-                border-top: 1px dashed $grey2;
+                border-top: 1px dashed #333;
                 padding-left: 0px;
                 line-height: 24px;
 
@@ -172,29 +185,11 @@ body {
 
     .container {
         h1 {
-            font-size: 32px;
+            font-size: 28px;
         }
 
         h2 {
-            font-size: 18px;
-        }
-
-        .head {
-            flex-direction: column;
-    
-            .profile-picture {
-                max-width: 300px;
-            }
-    
-            .info {
-                padding-left: 0px;
-                padding-top: 20px;
-    
-                p {
-                    font-size: 14px;
-                    line-height: 18px;
-                }
-            }
+            font-size: 16px;
         }
     }
 }
