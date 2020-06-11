@@ -142,6 +142,16 @@ const projects = [
             { text: "npm", link: "https://www.npmjs.com/package/libgen-downloader" }
         ]
     },
+
+    {
+        type: "other",
+        name: "itch.io bundle claimer", 
+        desc: "A simple script that is using selenium to help you for adding all bundle items to your library by clicking all download buttons in place of you.",
+        img: "",
+        buttons: [
+            { text: "github", link: "https://github.com/obsfx/itchio-bundle-claimer" },
+        ]
+    },
 ]
 
 // const pens = [

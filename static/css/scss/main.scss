@@ -11,8 +11,13 @@ $green: #2ECC40;
 $orange: #FF851B;
 $yellow: #f7df1e;
 
+$nyellow: #fff591;
+$ngrey: #afafaf;
+$ndarkgrey: #616161;
+$ndark: #232323;
+
 body {
-    background-color: #fff;
+    background-color: $black;
     font-family: 'Inter', sans-serif;
 }
 
@@ -27,14 +32,16 @@ body {
     padding: 25px;
 
     .link {
-        color: $black;
+        color: $ngrey;
         text-decoration: none;
-        border-bottom: 1px dashed $black;
-        font-family:  'noto_monoregular', monospace;
+        border-bottom: 1px dashed $grey;
+        font-family: 'IBM Plex Mono';
         font-size: 14px;
 
         &:hover {
-            background-color: $yellow;
+            background-color: $lime;
+            color: $black;
+            border-color: $black;
         }
     }
 
@@ -59,6 +66,7 @@ body {
     
     h1, h2 {
         text-align: center;
+        color: $nyellow;
     }
 
     h1 {
@@ -66,8 +74,6 @@ body {
         margin: 0;
         letter-spacing: -1px;
         font-size: 36px;
-        color: $black;
-        margin-bottom: 15px;
     }
 
     h2 {
@@ -76,55 +82,50 @@ body {
         letter-spacing: -1px;
         font-size: 20px;
         font-weight: normal;
-        color: $black;
-        margin-bottom: 15px;
         padding-bottom: 3px;
-        border-bottom: 1px solid $grey2;
+        border-bottom: 1px solid $ndark;
     }
 
     .info {
-        padding-left: 25px;
-
         .things {
-            font-weight: normal;
             font-family: 'IBM Plex Mono';
-            font-size: 14px;
-            background: $grey2;
+            background: $ndark;
         }
 
         .media {
             ul {
-                margin-left: -20px;
+                margin-left: -40px;
 
-                li a {
-                    font-size: 14px;
-                    color: $black;
+                li {
+                    list-style: none;
 
-                    &:hover {
-                        background-color: $yellow;
+                    a {
+                        font-size: 14px;
+                        color: $ndarkgrey;
+
+                        &:hover {
+                            background-color: $lime;
+                            color: $black;
+                            border-color: $black;
+                        }
                     }
                 }
             }
         }
 
         p {
-            color: $black;
+            color: $ndarkgrey; 
             font-size: 14px;
             line-height: 22px;
+            text-align: justify;
 
             span {
                 display: inline-block;
-                // vertical-align: baseline;
-                font-weight: bold;
                 line-height: 12px;
-
-                // font-family:  'noto_monoregular', monospace;
+                color: white;
 
                 &.js {
-                    font-size: 12px;
-                    background-color: $yellow;
-                    padding: 1px 5px;
-                    border-radius: 3px;
+                    color: $yellow;
                 }
             }
         }
@@ -134,50 +135,55 @@ body {
         margin-top: 50px;
         padding-bottom: 50px;
 
-        ul li {
-            margin-bottom: 30px;
+        ul {
+            margin-left: -40px;
 
-            img {
-                width: 16px;
-            }
+            li {
+                margin-bottom: 30px;
 
-            div {
-                border: none;
-                font-size: 14px;
-                // text-decoration: underline;
-                display: inline;
-                text-transform: lowercase;
-                padding: 0px 4px;
-                background-color: $grey2;
-                font-family: 'noto_monoregular', monospace;
-            }
+                img {
+                    width: 16px;
+                }
 
-            span {
-                color: $black;
-                font-size: 14px;
-                line-height: 22px;
-                margin-left: 5px;
-                text-transform: lowercase;
-            }
+                div {
+                    border: none;
+                    font-size: 14px;
+                    display: inline;
+                    text-transform: lowercase;
+                    padding: 0px 4px;
+                    color: white; 
+                    background-color: $ndark;
+                    font-family: 'IBM Plex Mono';
+                }
 
-            .links {
-                background: none;
-                display: block;
-                margin: 0px;
-                margin-top: 5px;
-                padding-top: 5px;
-                border-top: 1px dashed #333;
-                padding-left: 0px;
-                line-height: 24px;
+                span {
+                    color: $grey;
+                    font-size: 14px;
+                    line-height: 22px;
+                    margin-left: 5px;
+                    text-transform: lowercase;
+                }
 
-                a {
-                    margin-right: 10px;
+                .links {
+                    background: none;
+                    display: block;
+                    margin: 0px;
+                    margin-top: 5px;
+                    padding-top: 5px;
+                    border-top: 1px dashed $ndarkgrey;
+                    padding-left: 0px;
+                    line-height: 24px;
+
+                    a {
+                        margin-right: 10px;
+                    }
                 }
             }
         }
 
+
         div {
-            margin-top: 50px;
+            margin-top: 30px;
         }
     }
 }
