@@ -12,13 +12,17 @@ $orange: #FF851B;
 $yellow: #f7df1e;
 
 $nyellow: #fff591;
+$n2yellow: #fffcd2;
 $ngrey: #afafaf;
 $ndarkgrey: #616161;
 $ndark: #232323;
 
+$monospace: 'Ubuntu Mono', monospace;
+$sansserif: 'Inter', sans-serif;
+
 body {
-    background-color: $black;
-    font-family: 'Inter', sans-serif;
+    background-color: white;
+    font-family: $monospace;
 }
 
 * {
@@ -26,22 +30,20 @@ body {
 }
 
 .container {
-    max-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 510px;
     padding: 25px;
 
     .link {
-        color: $ngrey;
         text-decoration: none;
-        border-bottom: 1px dashed $grey;
-        font-family: 'IBM Plex Mono';
-        font-size: 14px;
+        color: $ndark;
+        display: inline-block;
+        height: 20px;
+        border-bottom: 8px solid #d2d3fd;
 
         &:hover {
-            background-color: $lime;
             color: $black;
-            border-color: $black;
+            border-color: #fdcaca;
+            font-weight: bold;
         }
     }
 
@@ -53,10 +55,7 @@ body {
     }
 
     .profile-picture {
-        max-width: 200px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 30px;
+        max-width: 140px;
 
         img {
             width: 100%;
@@ -65,15 +64,14 @@ body {
     }
     
     h1, h2 {
-        text-align: center;
-        color: $nyellow;
+        font-family: $sansserif;
     }
 
     h1 {
         padding: 0;
         margin: 0;
         letter-spacing: -1px;
-        font-size: 36px;
+        font-size: 48px;
     }
 
     h2 {
@@ -86,48 +84,42 @@ body {
         border-bottom: 1px solid $ndark;
     }
 
-    .info {
-        .things {
-            font-family: 'IBM Plex Mono';
-            background: $ndark;
-        }
 
-        .media {
-            ul {
-                margin-left: -40px;
+    .media {
+        ul {
+            margin-left: -25px;
 
-                li {
-                    list-style: none;
+            li {
+                a {
+                    font-size: 18px;
+                    color: black;
 
-                    a {
-                        font-size: 14px;
-                        color: $ndarkgrey;
-
-                        &:hover {
-                            background-color: $lime;
-                            color: $black;
-                            border-color: $black;
-                        }
+                    &:hover {
+                        background-color: $lime;
+                        color: $black;
+                        border-color: $black;
                     }
                 }
             }
         }
+    }
 
-        p {
-            color: $ndarkgrey; 
-            font-size: 14px;
-            line-height: 22px;
-            text-align: justify;
+    p {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 18px;
 
-            span {
-                display: inline-block;
-                line-height: 12px;
-                color: white;
+        span {
+            background-color: $n2yellow;
+            text-decoration: underline;
+        }
+    }
 
-                &.js {
-                    color: $yellow;
-                }
-            }
+    .info {
+        margin-top: 20px;
+
+        .things {
+            background: $ndark;
         }
     }
 
@@ -135,11 +127,18 @@ body {
         margin-top: 50px;
         padding-bottom: 50px;
 
+        h2 {
+            font-size: 32px;
+        }
+
         ul {
-            margin-left: -40px;
+            margin-left: -35px;
 
             li {
-                margin-bottom: 30px;
+                border-left: 1px dashed #000000;
+                padding-bottom: 30px;
+                padding-left: 15px;
+                list-style: none;
 
                 img {
                     width: 16px;
@@ -147,19 +146,16 @@ body {
 
                 div {
                     border: none;
-                    font-size: 14px;
+                    font-size: 18px;
                     display: inline;
                     text-transform: lowercase;
                     padding: 0px 4px;
                     color: white; 
                     background-color: $ndark;
-                    font-family: 'IBM Plex Mono';
                 }
 
                 span {
-                    color: $grey;
-                    font-size: 14px;
-                    line-height: 22px;
+                    font-size: 16px;
                     margin-left: 5px;
                     text-transform: lowercase;
                 }
@@ -176,6 +172,8 @@ body {
 
                     a {
                         margin-right: 10px;
+                        height: 24px;
+                        border-width: 8px;
                     }
                 }
             }
@@ -197,6 +195,18 @@ body {
 
         h2 {
             font-size: 16px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .experiments ul li span {
+            font-size: 14px;
+        }
+
+        .experiments h2 {
+            font-size: 20px;
         }
     }
 }
