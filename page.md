@@ -30,7 +30,7 @@ I love using **Neovim**.
 - **xeh** is a command-line Canonical HEX+ASCII display tool written in ~100 lines of Common Lisp. [ [github](https://github.com/obsfx/xeh) ]
 - **console8** is yet another CHIP8 emulator but works on your command line. console8 simply uses your command line to render the graphics and does not require any GUI. [ [github](https://github.com/obsfx/console8) / [npm](https://www.npmjs.com/package/console8) ]
 - **kmap-solver** is a command line tool to solve and visualize Karnaugh Maps up to 4 variables. [ [github](https://github.com/obsfx/kmap-solver) / [npm](https://www.npmjs.com/package/kmap-solver) ]
-- **lurkdown** is a Markdown transpiler that was built on NodeJS with typescript to create standalone HTML files. [ [github](https://github.com/obsfx/lurkdown) / [npm](https://www.npmjs.com/package/lurkdown) ]
+- **lurkdown** is a Markdown transpiler that was built on NodeJS with TypeScript to create standalone HTML files. [ [github](https://github.com/obsfx/lurkdown) / [npm](https://www.npmjs.com/package/lurkdown) ]
 
 ### Libraries
 
@@ -39,7 +39,7 @@ I love using **Neovim**.
 
 ### Games
 
-- **react-card-matching-game** is a simple card matching game that was built using React and React Hooks. [ [github](https://github.com/obsfx/react-card-matching-game) / [demo](https://obsfx.github.io/react-card-matching-game/) ]
+- **react-card-matching-game** is a simple card matching game that was built using React and Hooks. [ [github](https://github.com/obsfx/react-card-matching-game) / [demo](https://obsfx.github.io/react-card-matching-game/) ]
 - **zero** is a small, short shooting game that was created in 48 hours with PICO8/Lua for Ludum Dare 46 game jam.  [ [github](https://github.com/obsfx/zero-ld46) / [ludum dare 46 submission page](https://ldjam.com/events/ludum-dare/46/zero) / [play (48 hours compo version)](https://obsfx.github.io/zero/) / [play (improved post-compo version)](https://obsfx.github.io/zero/postcompo/) ]
 - **medieval express** is a turn-based rogue-like "package shifting" game fits in only 2 kilobytes. [ [github](https://github.com/obsfx/2kplus-jam-medieval-express) / [itch.io page](https://obsfx.itch.io/medieval-express) ]
 - **danger in the snow** is a basic turn-based game created in 48 hours for Ludum Dare 44. [ [ld44 submission page](https://ldjam.com/events/ludum-dare/44/danger-in-the-snow) / [github](https://github.com/obsfx/ld44-danger-in-the-snow) / [play](https://obsfx.github.io/games/jams/ld44_dangerinthesnow) ]
