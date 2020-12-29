@@ -5,7 +5,7 @@
 }
 
 .ld-wrapper { 
-  max-width: 640px;
+  max-width: 475px;
   margin: auto;
   padding: 20px;
   font-family: 'Noto Sans JP', sans-serif;
@@ -22,11 +22,11 @@
 }
 
 .ld-div { 
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .ld-h1 { 
-  font-size: 40px;
+  font-size: 24px;
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
@@ -37,7 +37,7 @@
 }
 
 .ld-h2 {
-  font-size: 36px;
+  font-size: 18px;
 }
 
 .ld-img { 
