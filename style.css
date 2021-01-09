@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
 
 * {
   box-sizing: border-box;
 }
 
 .ld-wrapper { 
-  max-width: 475px;
-  margin: auto;
+  max-width: 600px;
+  margin-left: 60px;
   padding: 20px;
-  font-family: 'Noto Sans JP', sans-serif;
-  text-align: justify;
-  color: rgba(0, 0, 0, 0.8);
 }
 
 .ld-a {
@@ -22,26 +20,33 @@
 }
 
 .ld-div { 
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.ld-strong {
+  background-color: #000;
+  color: #dcdcdc;
+  font-weight: normal;
+  padding: 1px 4px;
   font-size: 14px;
+  border-radius: 3px;
 }
 
 .ld-h1 { 
-  font-size: 24px;
+  font-size: 32px;
   margin-top: 10px;
   margin-bottom: 10px;
-  text-align: center;
-}
-
-.ld-h1 img {
-  border-radius: 5px;
-}
-
-.ld-h2 {
-  font-size: 18px;
+  display: inline-flex;
 }
 
 .ld-img { 
-  max-width: 150px;
+  max-width: 85px;
+}
+
+.ld-h1 .ld-img {
+  border-radius: 5px;
 }
 
 .ld-ul {
@@ -49,6 +54,10 @@
 }
 
 .ld-li { 
-  padding-bottom: 5px;
   list-style: none;
+  padding-bottom: 3px;
+}
+
+.ld-li .ld-ul {
+  margin-top: 5px;
 }
