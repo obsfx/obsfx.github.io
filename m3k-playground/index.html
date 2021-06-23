@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>m3k playground</title>
+
+    <style>
+      .row {
+        display: flex;
+      }
+
+      .wrapper {
+        padding: 5px;
+      }
+
+      button {
+        margin-left: 10px;
+      }
+
+      .head {
+        display: flex;
+        height: 20px;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .compiled {
+        white-space: pre-wrap;
+        max-height: 285px;
+        overflow: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>m3k is a lisp dialect that compiles to JavaScript</p>
+    <div class="row">
+      <div class="wrapper">
+        <div class="head">
+          <div>source: </div>
+          <button class="compile">Compile & Run</button>
+        </div>
+
+        <textarea class="source-code" cols="100" rows="20">
+(define canvas ((getval createElement document) "canvas"))
+(define ctx ((getval get-context canvas) "2d"))
+(set! (getval width canvas) 400)
+(set! (getval height canvas) 400)
+
+(define container ((getval query-selector document) ".output-container"))
+(set! (getval innerHTML container) "")
+((getval append-child container) canvas)
+
+(define ball
+  (dict
+    :x (+ (* 300 ((getval random Math))) 80)
+    :y (+ (* 200 ((getval random Math))) 80)
+    :r 12
+    :vx 5
+    :vy 2
+    :update (defun ()
+      (progn
+        (set! (getval x ball) (+ (getval x ball) (getval vx ball)))
+        (set! (getval y ball) (+ (getval y ball) (getval vy ball)))
+        (if (&lt; (getval x ball) 0) (set! (getval vx ball) (* (getval vx ball) (- 1))))
+        (if (&gt; (getval x ball) (getval width canvas)) (set! (getval vx ball) (* (getval vx ball) (- 1))))
+        (if (&lt; (getval y ball) 0) (set! (getval vy ball) (* (getval vy ball) (- 1))))
+        (if (&gt; (getval y ball) (getval height canvas)) (set! (getval vy ball) (* (getval vy ball) (- 1))))
+        ))))
+
+(define loop (defun ()
+(progn
+  (set! (getval fill-style ctx) "rgba(214,190,54)")
+  ((getval fill-rect ctx) 0 0 (getval width canvas) (getval height canvas))
+  ((getval update ball))
+  ((getval begin-path ctx))
+  (set! (getval fill-style ctx) "black")
+  ((getval arc ctx) (getval x ball) (getval y ball) (getval r ball) 0 (* 2 (getval PI Math)))
+  ((getval fill ctx))
+  (request-animation-frame loop))))
+(loop)
+        </textarea>
+      </div>
+
+      <div class="wrapper">
+        <p>compiled javascript: </p>
+        <pre class="compiled">
+        </pre>
+      </div>
+    </div>
+
+    <div>
+      <p>output: </p>
+      <div class="output-container">
+      </div>
+    </div>
+
+    <script src="m3k.js"></script>
+    <script>
+      const compile = () => {
+        const tokens = m3k.tokenize(document.querySelector('.source-code').value)
+        const ast = m3k.parse(tokens)
+        const transformAST = m3k.transform(ast)
+        const code = m3k.generate(transformAST)
+
+        console.log(code)
+        eval(code)
+        document.querySelector(".compiled").innerHTML = code
+      }
+
+      document.querySelector(".compile").addEventListener("click", compile)
+      compile()
+    </script>
+  </body>
+</html>
