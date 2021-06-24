@@ -88,127 +88,11 @@ exports.generate = generate;
 
 },{}],2:[function(require,module,exports){
 "use strict";
-//import { Token } from './types/token.types'
-//import { AST } from './types/ast.types'
 Object.defineProperty(exports, "__esModule", { value: true });
 const tokenizer_1 = require("./tokenizer");
 const parser_1 = require("./parser");
 const transformer_1 = require("./transformer");
 const code_generator_1 = require("./code-generator");
-//import { debugAST } from './ast-debugger'
-//let test = ''
-//
-//test += `
-//  (define r 5)
-//  (define degisken-falan 20)
-//  (- 1 (+ r degisken-falan))
-//  (set! r 300)
-//  (define test "deneme text")
-//  (define result (+ r r (* 15 degisken-falan)))
-//  (define text-result (+ test test))
-//  (print "test" test result)
-//  (set! result "result text")
-//  (print result)
-//  (define arr (list 5 4 3 5 (set! r 500) (list "test" 42 (list 74))))
-//  (print arr)
-//  (print (nth 2 (list 42 "deneme arr" "test")))
-//  (print (nth 4 arr))
-//  (print (nth (nth 1 arr) arr))
-//  (print "array example")
-//  (print (nth (nth 2 (list 1 2 3)) (list 0 0 0 3 0 0)))
-//  (set! (nth 2 arr) "set array")
-//  (print (nth 2 arr))
-//  (set! arr (list 1 2 3 4))
-//  (print arr)
-//  (set! arr (append arr (list 5 6 7 8)))
-//  (print arr)
-//  (push arr 5 125 151 (list 4 10 15))
-//  (unshift arr 5 125 151 (list 4 10 15))
-//  (push (list 15 20 (list 250 5 4)) 5 125 151 (list 4 10 15))
-//  (pop arr)
-//  (print (pop (list 15 20 (list 250 5 4))))
-//  (print (shift (list 15 20 (list 250 5 4))))
-//  (print (length (reverse (append (list) (list 15 20 (list 250 5 4))))))
-//  (define arr2 (reverse (append (list) (list 15 20 (list 250 5 4)))))
-//  (print arr2)
-//  (print (includes arr2 15))
-//  (define arr3 (list 0 0 0 0 0))
-//  (fill arr3 3)
-//  (print arr3)
-//  (print (concat arr3 arr2))
-//  (print (join arr3 ", "))
-//  (define arr4 (list 1 2 3 4 5 6))
-//  (print arr4)
-//  (splice arr4 2 1)
-//  (print arr4)
-//  (print (nth (- (length arr4) 1) arr4))
-// `
-//
-//test += `
-//(define obj
-//  (dict
-//   :entry-one "test"
-//   :entry-two "test2"
-//   :entry-three (dict :test-entry "test3"
-//                )
-//  )
-//)
-//
-//(set! (getval new-field (getval entry-three obj)) "test")
-//(print (getval new-field (getval entry-three obj)))
-//
-//
-//(define fn (defun (text) (print text)))
-//(set! fn (defun (text) (print text)))
-//
-//(fn "deneme deneme")
-//
-//(define add
-// (defun (a b c d)
-//  (progn
-//   (define y (* a b c d))
-//   (print "sonuç:" y))))
-//
-//(add 2 2 2 2)
-//
-//(define arr5 (map arr4 (defun (el index) (+ el index))))
-//(print arr5)
-//
-//(if 1
-// (progn
-//  (define res (add 1 1 2 2))
-//  (print res))
-// (print "test2"))
-//`
-//
-//// console.log(test)
-////
-//// setTimeout(() => {
-////   //console.log(tokens)
-////   console.log(parse(tokens))
-//// }, 1000)
-////
-//// setInterval(() => {})
-//
-//const run = () => {
-//  console.log(`input: `, test)
-//  console.log('-------------------')
-//  const tokens: Token[] = tokenize(test)
-//  //console.log(tokens)
-//  //console.log('-------------------')
-//  const ast: AST = parse(tokens)
-//  //console.log(ast)
-//  //console.log('-------------------')
-//  const transformedAST: AST = transform(ast)
-//  //debugAST(transformedAST)
-//  const code: string = generate(transformedAST)
-//  console.log(code)
-//  console.log('-------------------')
-//  eval(code)
-//}
-//
-//run()
-//
 module.exports = {
     tokenize: tokenizer_1.tokenize,
     parse: parser_1.parse,
@@ -275,7 +159,7 @@ const parse = (tokens) => {
             throw new Error(`Line ${line + 1}: Definition in expression context, where definitions are not allowed`);
         }
         if (!left) {
-            if (operator === '*' || operator === '/') {
+            if (operator !== '!' && operator !== '+' && operator !== '-') {
                 throw new Error(`Line ${line + 1}: Unexpected token: ${operator}`);
             }
             const node = {
@@ -285,6 +169,9 @@ const parse = (tokens) => {
                 argument: right,
             };
             return node;
+        }
+        else if (operator === '!') {
+            throw new Error(`Line ${line + 1}: Unexpected token: ${operator}`);
         }
         if (left.generaltype !== 'Expression') {
             throw new Error(`Line ${line + 1}: Definition in expression context, where definitions are not allowed`);
@@ -362,8 +249,14 @@ const parse = (tokens) => {
                 const node = walk();
                 return node;
             }
+            case token_types_1.TokenType.EQUAL:
             case token_types_1.TokenType.GREATER:
+            case token_types_1.TokenType.GREATER_EQUAL:
             case token_types_1.TokenType.LESS:
+            case token_types_1.TokenType.LESS_EQUAL:
+            case token_types_1.TokenType.BANG:
+            case token_types_1.TokenType.BANG_EQUAL:
+            case token_types_1.TokenType.MODULO:
             case token_types_1.TokenType.PLUS:
             case token_types_1.TokenType.MINUS:
             case token_types_1.TokenType.STAR:
@@ -1008,23 +901,50 @@ const tokenize = (input) => {
                 }
                 tokens.push({ type: token_types_1.TokenType.STAR, value: '*' });
                 break;
-            case '=':
+            case '%':
                 if (peek() !== ' ') {
                     throw new Error(`Unexpected first symbol character: ${peek()}`);
                 }
-                tokens.push({ type: token_types_1.TokenType.EQUAL, value: '=' });
+                tokens.push({ type: token_types_1.TokenType.MODULO, value: '%' });
+                break;
+            case '!':
+                if (peek() === '=') {
+                    consume();
+                    tokens.push({ type: token_types_1.TokenType.BANG_EQUAL, value: '!=' });
+                    break;
+                }
+                if (peek() !== ' ') {
+                    throw new Error(`Unexpected first symbol character: ${peek()}`);
+                }
+                tokens.push({ type: token_types_1.TokenType.BANG, value: '!' });
                 break;
             case '>':
+                if (peek() === '=') {
+                    consume();
+                    tokens.push({ type: token_types_1.TokenType.GREATER_EQUAL, value: '>=' });
+                    break;
+                }
                 if (peek() !== ' ') {
                     throw new Error(`Unexpected first symbol character: ${peek()}`);
                 }
                 tokens.push({ type: token_types_1.TokenType.GREATER, value: '>' });
                 break;
             case '<':
+                if (peek() === '=') {
+                    consume();
+                    tokens.push({ type: token_types_1.TokenType.LESS_EQUAL, value: '<=' });
+                    break;
+                }
                 if (peek() !== ' ') {
                     throw new Error(`Unexpected first symbol character: ${peek()}`);
                 }
                 tokens.push({ type: token_types_1.TokenType.LESS, value: '<' });
+                break;
+            case '=':
+                if (peek() !== ' ') {
+                    throw new Error(`Unexpected first symbol character: ${peek()}`);
+                }
+                tokens.push({ type: token_types_1.TokenType.EQUAL, value: '===' });
                 break;
             case '"':
                 {
@@ -1245,6 +1165,9 @@ var TokenType;
     TokenType["SLASH"] = "SLASH";
     TokenType["STAR"] = "STAR";
     TokenType["EQUAL"] = "EQUAL";
+    TokenType["MODULO"] = "MODULO";
+    TokenType["BANG"] = "BANG";
+    TokenType["BANG_EQUAL"] = "BANG_EQUAL";
     TokenType["GREATER"] = "GREATER";
     TokenType["GREATER_EQUAL"] = "GREATER_EQUAL";
     TokenType["LESS"] = "LESS";
