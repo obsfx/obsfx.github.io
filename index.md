@@ -1,9 +1,9 @@
 # Ömercan Balandı
 
-I'm 22 years old passionate developer who is studying *computer science* at *dokuz eylul university*.
+I'm 23 years old passionate developer who is studying *computer science* at *dokuz eylul university*.
 
 
-I'm interested in *front-end development*. I am currently learning *React*. I enjoy creating stuff using **JavaScript**, **TypeScript** and **NodeJS**. I made some [demos](https://codepen.io/obsfx/full/zYYGowP) that was picked as featured stuff and presented at the main page of [codepen](https://codepen.io/obsfx).
+I'm interested in *front-end development*. I can create web apps using **React** and **Vue**. I enjoy creating stuff using **JavaScript**, **TypeScript** and **NodeJS**. I made some [demos](https://codepen.io/obsfx/full/zYYGowP) that was picked as featured stuff and presented at the main page of [codepen](https://codepen.io/obsfx).
 
 
 Beside of the front-end development, I really love creating [simple games](https://obsfx.itch.io/medieval-express) for [game jams](https://ldjam.com/users/omercanbalandi/games) and making convenient [command-line tools](https://github.com/obsfx/libgen-downloader) to make the things more easier to me.
@@ -22,7 +22,21 @@ I love using **Neovim**.
 - [dev.to/obsfx](https://dev.to/obsfx)
 - [medium.com/@omercanbalandi](https://medium.com/@omercanbalandi)
 
+
+
+# Experience
+
+- Junior Frontend Developer - **Radity** `February 2021 - May 2021` : I worked on **React** and **Vue/Nuxt** projects.
+
+
+
 # Experiments
+
+### Compilers
+
+- **m3k** is a lisp dialect that written in TypeScript and compiles from lisp to JavaScript. [github](https://github.com/obsfx/m3k)
+- **lurkdown** is a Markdown transpiler that was built on NodeJS with TypeScript to create standalone HTML files.
+  [webpage](https://obsfx.github.io/lurkdown/) / [github](https://github.com/obsfx/lurkdown) / [npm](https://www.npmjs.com/package/lurkdown)
 
 ### Tools
 
