@@ -26,7 +26,9 @@ I love using **Neovim**.
 
 # Experience
 
-- Junior Front-end Developer - **Radity** `February 2021 - May 2021` : I worked on **React** and **Vue/Nuxt** projects.
+- Junior Front-end Developer - **Radity** `February 2021 - May 2021` 
+
+  I worked on several **React** and **Vue/Nuxt** projects. I maintained legacy codebases and participated implementing of the new features.
 
 
 
