@@ -36,21 +36,19 @@ I love using **Neovim**.
 
 - **m3k** is a lisp dialect that written in TypeScript and compiles from lisp to JavaScript.
   [github](https://github.com/obsfx/m3k) / [try](https://obsfx.github.io/m3k-playground/)
-- **lurkdown** is a Markdown transpiler that was built on NodeJS with TypeScript to create standalone HTML files.
+- **lurkdown** is a Markdown transpiler that was built on NodeJS with TypeScript to create standalone HTML files. Also this page is generated using lurkdown.
   [webpage](https://obsfx.github.io/lurkdown/) / [github](https://github.com/obsfx/lurkdown) / [npm](https://www.npmjs.com/package/lurkdown)
 
 ### Tools
 
 - **libgen downloader** is a simple tool that was built using React, Ink and Zustand to search and download ebooks from libgen via command line interface.
-  [web page](https://obsfx.github.io/libgen-downloader/) / [github](https://github.com/obsfx/libgen-downloader) / [npm](https://www.npmjs.com/package/libgen-downloader)
+  [webpage](https://obsfx.github.io/libgen-downloader/) / [github](https://github.com/obsfx/libgen-downloader) / [npm](https://www.npmjs.com/package/libgen-downloader)
 - **xeh** is a command-line Canonical HEX+ASCII display tool written in ~100 lines of Common Lisp.
   [github](https://github.com/obsfx/xeh)
 - **console8** is yet another CHIP8 emulator but works on your command line. console8 simply uses your command line to render the graphics and does not require any GUI.
   [github](https://github.com/obsfx/console8) / [npm](https://www.npmjs.com/package/console8)
 - **kmap-solver** is a command line tool to solve and visualize Karnaugh Maps up to 4 variables.
   [github](https://github.com/obsfx/kmap-solver) / [npm](https://www.npmjs.com/package/kmap-solver)
-- **lurkdown** is a Markdown transpiler that was built on NodeJS with TypeScript to create standalone HTML files.
-  [webpage](https://obsfx.github.io/lurkdown/) / [github](https://github.com/obsfx/lurkdown) / [npm](https://www.npmjs.com/package/lurkdown)
 
 ### Libraries
 
