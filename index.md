@@ -34,7 +34,8 @@ I love using **Neovim**.
 
 ### Compilers
 
-- **m3k** is a lisp dialect that written in TypeScript and compiles from lisp to JavaScript. [github](https://github.com/obsfx/m3k)
+- **m3k** is a lisp dialect that written in TypeScript and compiles from lisp to JavaScript.
+  [github](https://github.com/obsfx/m3k) / [try](https://obsfx.github.io/m3k-playground/)
 - **lurkdown** is a Markdown transpiler that was built on NodeJS with TypeScript to create standalone HTML files.
   [webpage](https://obsfx.github.io/lurkdown/) / [github](https://github.com/obsfx/lurkdown) / [npm](https://www.npmjs.com/package/lurkdown)
 
