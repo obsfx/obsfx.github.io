@@ -3,10 +3,10 @@
 I'm 23 years old passionate developer who is studying *computer science* at *dokuz eylul university*.
 
 
-I'm interested in *front-end development*. I can create web apps using **React** and **Vue**. I enjoy creating stuff using **JavaScript**, **TypeScript** and **NodeJS**. I made some [demos](https://codepen.io/obsfx/full/zYYGowP) that was picked as featured stuff and presented at the main page of [codepen](https://codepen.io/obsfx).
+I'm interested in *front-end development*. I can create web apps using **React** and **Vue**. I enjoy creating stuff using **JavaScript**, **TypeScript** and **NodeJS**. I made some [demos](https://codepen.io/obsfx/full/zYYGowP) that were picked as featured stuff and presented on the main page of [codepen](https://codepen.io/obsfx).
 
 
-Beside of the front-end development, I really love creating [simple games](https://obsfx.itch.io/medieval-express) for [game jams](https://ldjam.com/users/omercanbalandi/games) and making convenient [command-line tools](https://github.com/obsfx/libgen-downloader) to make the things more easier to me.
+Besides the front-end development, I love creating [simple games](https://obsfx.itch.io/medieval-express) for [game jams](https://ldjam.com/users/omercanbalandi/games) and making convenient [command-line tools](https://github.com/obsfx/libgen-downloader) to make things easier for me.
 
 
 I love using **Neovim**.
@@ -27,7 +27,7 @@ I love using **Neovim**.
 # Experience
 
 - `Junior Front-end Developer - Radity February 2021 - May 2021`
-  I worked on several **React** and **Vue/Nuxt** projects. I maintained legacy codebases and participated implementing of the new features.
+  I worked on several **React** and **Vue/Nuxt** projects. I maintained legacy codebases and helped the team for implementing the new features.
 
 
 
@@ -35,20 +35,20 @@ I love using **Neovim**.
 
 ### Compilers
 
-- **m3k** is a **toy programming language** compiler of a **Lisp** dialect that written in **TypeScript** and compiles to **JavaScript**.
-  [github](https://github.com/obsfx/m3k) / [try](https://obsfx.github.io/m3k-playground/)
-- **lurkdown** is a **Markdown compiler** that was built on **NodeJS** with **TypeScript** to create standalone HTML files. Also this page is generated using lurkdown.
+- **m3k** is a **toy programming language** compiler of a **Lisp** dialect that was written in **TypeScript** and compiles to **JavaScript**.
+  [live playground](https://obsfx.github.io/m3k/) / [github](https://github.com/obsfx/m3k) / [npm](https://www.npmjs.com/package/m3k)
+- **lurkdown** is a **Markdown compiler** that was built on **NodeJS** with **TypeScript** to create standalone HTML files. Also, this page is generated using lurkdown.
   [webpage](https://obsfx.github.io/lurkdown/) / [github](https://github.com/obsfx/lurkdown) / [npm](https://www.npmjs.com/package/lurkdown)
 
 ### Tools
 
-- **libgen downloader** is a simple tool that was built using **React**, **Ink** and **Zustand** to search and download ebooks from libgen via command line interface.
+- **libgen downloader** is a simple tool that was built using **React**, **Ink** and **Zustand** to search and download ebooks from libgen via the terminal user interface.
   [webpage](https://obsfx.github.io/libgen-downloader/) / [github](https://github.com/obsfx/libgen-downloader) / [npm](https://www.npmjs.com/package/libgen-downloader)
 - **xeh** is a command-line **Canonical HEX+ASCII** display tool written in ~100 lines of **Common Lisp**.
   [github](https://github.com/obsfx/xeh)
 - **console8** is yet another **CHIP8 emulator** but works on your command line. console8 simply uses your command line to render the graphics and does not require any GUI.
   [github](https://github.com/obsfx/console8) / [npm](https://www.npmjs.com/package/console8)
-- **kmap-solver** is a command line tool to solve and visualize Karnaugh Maps up to 4 variables.
+- **kmap-solver** is a command-line tool to solve and visualize Karnaugh Maps up to 4 variables.
   [github](https://github.com/obsfx/kmap-solver) / [npm](https://www.npmjs.com/package/kmap-solver)
 
 ### Libraries
@@ -64,11 +64,11 @@ I love using **Neovim**.
   [github](https://github.com/obsfx/react-card-matching-game) / [demo](https://obsfx.github.io/react-card-matching-game/)
 - **zero** is a small, short shooting game that was created in 48 hours with **PICO8/Lua** for Ludum Dare 46 game jam.
   [github](https://github.com/obsfx/zero-ld46) / [ludum dare 46 submission page](https://ldjam.com/events/ludum-dare/46/zero) / [play (48 hours compo version)](https://obsfx.github.io/zero/) / [play (improved post-compo version)](https://obsfx.github.io/zero/postcompo/)
-- **medieval express** is a turn-based rogue-like "package shifting" game fits in **only 2 kilobytes**.
+- **medieval express** is a turn-based rogue-like "package shifting" game that fits in **only 2 kilobytes**.
   [github](https://github.com/obsfx/2kplus-jam-medieval-express) / [itch.io page](https://obsfx.itch.io/medieval-express)
 - **danger in the snow** is a basic turn-based game created in 48 hours for Ludum Dare 44.
   [ld44 submission page](https://ldjam.com/events/ludum-dare/44/danger-in-the-snow) / [github](https://github.com/obsfx/ld44-danger-in-the-snow) / [play](https://obsfx.github.io/games/jams/ld44_dangerinthesnow)
-- **purgatory** is a top down shooter game that I developed with **Phaser.js** library for Ludum Dare 43 game jam in 48 hours.
+- **purgatory** is a top-down shooter game that I developed with **Phaser.js** library for Ludum Dare 43 game jam in 48 hours.
   [ld43 submission page](https://ldjam.com/events/ludum-dare/43/purgatory) / [github](https://github.com/obsfx/ld43-purgatory) / [play](https://obsfx.github.io/games/jams/ld43_purgatory)
 - **tetris.js** is yet another tetris clone that I developed just using vanilla **JavaScript**.
   [github](https://github.com/obsfx/tetris-js) / [play](https://obsfx.github.io/games/others/tetrisjs)
@@ -79,7 +79,7 @@ I love using **Neovim**.
 
 ### Other Things
 
-- **creative coding expirements with p5.js** are some little animation loops that I created with **p5.js** library while I was trying to learn the fundamentals of creative coding.
+- **creative coding experiments with p5.js** are some little animation loops that I created with **p5.js** library while I was trying to learn the fundamentals of creative coding.
   [github](https://github.com/obsfx/creativecoding-practices-with-p5js/)
 - **3D Projection** of **JavaScript/p5.js** version of Daniel Shiffman's 3D Projection coding challenge.
   [github](https://github.com/obsfx/3DRotation-p5js) / [demo](https://obsfx.github.io/jsworks/3dprojection)
