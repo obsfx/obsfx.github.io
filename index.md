@@ -10,24 +10,24 @@ Besides the front-end development, I love creating [simple games](https://obsfx.
 
 
 I love using **Neovim**.
-
-
-- [balandiomer@gmail.com](mailto:balandiomer@gmail.com)
-- [linkedin.com/in/omercanbalandi](https://www.linkedin.com/in/omercanbalandi/)
-- [github.com/obsfx](https://github.com/obsfx)
-- [npmjs.com/~obsfx](https://www.npmjs.com/~obsfx)
-- [codepen.io/obsfx](https://codepen.io/obsfx)
-- [obsfx.itch.io](https://obsfx.itch.io/)
-- [twitter.com/obsfx](https://twitter.com/obsfx)
-- [dev.to/obsfx](https://dev.to/obsfx)
-- [medium.com/@omercanbalandi](https://medium.com/@omercanbalandi)
+<div id="contacts">
+  - [balandiomer@gmail.com](mailto:balandiomer@gmail.com)
+  - [linkedin.com/in/omercanbalandi](https://www.linkedin.com/in/omercanbalandi/)
+  - [github.com/obsfx](https://github.com/obsfx)
+  - [npmjs.com/~obsfx](https://www.npmjs.com/~obsfx)
+  - [codepen.io/obsfx](https://codepen.io/obsfx)
+  - [obsfx.itch.io](https://obsfx.itch.io/)
+  - [twitter.com/obsfx](https://twitter.com/obsfx)
+  - [dev.to/obsfx](https://dev.to/obsfx)
+  - [medium.com/@omercanbalandi](https://medium.com/@omercanbalandi)
+</div>
 
 
 
 ## Experience
 
 - `Junior Front-end Developer - Radity (February 2021 - May 2021)`
-  - I worked on several **React** and **Vue/Nuxt** projects. 
+  - I worked on several **React** and **Vue/Nuxt** projects.
   - I maintained legacy codebases and helped the team for implementing the new features.
 
 
