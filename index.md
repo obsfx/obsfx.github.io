@@ -24,7 +24,7 @@ I love using **Neovim**.
 
 
 
-# Experience
+## Experience
 
 - `Junior Front-end Developer - Radity (February 2021 - May 2021)`
   - I worked on several **React** and **Vue/Nuxt** projects. 
@@ -32,7 +32,7 @@ I love using **Neovim**.
 
 
 
-# Experiments
+## Experiments
 
 ### Compilers
 
