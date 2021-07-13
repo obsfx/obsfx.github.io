@@ -34,14 +34,14 @@ I love using **Neovim**.
 
 ## Experiments
 
-### Compilers
+#### Compilers
 
 - **m3k** is a **Lisp** dialect that was written in **TypeScript** and compiles to **JavaScript**.
   [live playground](https://obsfx.github.io/m3k/) / [github](https://github.com/obsfx/m3k) / [npm](https://www.npmjs.com/package/m3k)
 - **lurkdown** is a **Markdown compiler** that was built on **NodeJS** with **TypeScript** to create standalone HTML files. Also, this page is generated using lurkdown.
   [webpage](https://obsfx.github.io/lurkdown/) / [github](https://github.com/obsfx/lurkdown) / [npm](https://www.npmjs.com/package/lurkdown)
 
-### Tools
+#### Tools
 
 - **libgen downloader** is a simple tool that was built using **React**, **Ink** and **Zustand** to search and download ebooks from libgen via the terminal user interface.
   [webpage](https://obsfx.github.io/libgen-downloader/) / [github](https://github.com/obsfx/libgen-downloader) / [npm](https://www.npmjs.com/package/libgen-downloader)
@@ -52,14 +52,14 @@ I love using **Neovim**.
 - **kmap-solver** is a command-line tool to solve and visualize Karnaugh Maps up to 4 variables.
   [github](https://github.com/obsfx/kmap-solver) / [npm](https://www.npmjs.com/package/kmap-solver)
 
-### Libraries
+#### Libraries
 
 - **dungrain** is a **JavaScript** library that is using Binary Space Partitioning to create procedurally generated dungeons.
   [github](https://github.com/obsfx/dungrain) / [npm](https://www.npmjs.com/package/dungrain)
 - **kmap-solver-lib** is a utility function that is using in kmap-solver to solve Karnaugh Maps up to 4 variables.
   [github](https://github.com/obsfx/kmap-solver-lib) / [npm](https://www.npmjs.com/package/kmap-solver-lib)
 
-### Games
+#### Games
 
 - **react-card-matching-game** is a simple card matching game that was built using **React** and **Hooks**.
   [github](https://github.com/obsfx/react-card-matching-game) / [demo](https://obsfx.github.io/react-card-matching-game/)
@@ -78,7 +78,7 @@ I love using **Neovim**.
 - **spaceinvaders.js** is my first game development experiment that I created without any game development framework. I developed it only using **Canvas2D API**.
   [github](https://github.com/obsfx/spaceinvaders.js) / [play](https://obsfx.github.io/games/others/spaceinvadersjs)
 
-### Other Things
+#### Other Things
 
 - **creative coding experiments with p5.js** are some little animation loops that I created with **p5.js** library while I was trying to learn the fundamentals of creative coding.
   [github](https://github.com/obsfx/creativecoding-practices-with-p5js/)
