@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 
 const IndexPage = ({ data }) => {
+  console.log(data.allMarkdownRemark)
   return (
     <Layout>
       <Seo title="Ömercan Balandı" />

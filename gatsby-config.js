@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: ``,
+    title: `Ömercan Balandı`,
     description: `A passionate software developer based in Izmir, Turkey.`,
     author: `@obsfx`,
-    siteUrl: `https://omercan.xyz/`,
+    siteUrl: `https://omercan.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -48,8 +48,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Ömercan Balandı`,
+        short_name: `@obsfx`,
         start_url: `/`,
         background_color: `#000000`,
         // This will impact how browsers show your PWA/website
