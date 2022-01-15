@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[691],{6738:function(e,a,t){t.r(a);var l=t(7294),n=t(5127),r=t(3751);a.default=function(e){var a=e.data;return console.log(a.allMarkdownRemark),l.createElement(n.Z,null,l.createElement(r.Z,{title:"Ömercan Balandı"}),l.createElement("div",{className:"content",dangerouslySetInnerHTML:{__html:a.allMarkdownRemark.edges[0].node.html}}))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-0b28ad19789048d9ac1c.js.map
