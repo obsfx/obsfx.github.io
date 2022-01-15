@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Ömercan Balandı`,
+    title: ``,
     description: `A passionate software developer based in Izmir, Turkey.`,
     author: `@obsfx`,
     siteUrl: `https://omercan.io/`,
