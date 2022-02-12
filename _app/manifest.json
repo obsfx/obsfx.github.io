@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-8b72f896.js",
+    "file": "start-5d6e6ebd.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -13,7 +13,7 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-b9e5008b.js",
+    "file": "pages/__layout.svelte-9656d9ae.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -21,23 +21,7 @@
       "_vendor-6fa78954.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-4c715a4b.css"
-    ],
-    "assets": [
-      "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
-      "assets/fira-mono-all-400-normal-1e3b098c.woff",
-      "assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
-      "assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
-      "assets/fira-mono-greek-400-normal-a8be01ce.woff2",
-      "assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
-      "assets/fira-mono-latin-400-normal-e43b3538.woff2",
-      "assets/inter-cyrillic-ext-400-normal-444c3024.woff2",
-      "assets/inter-all-400-normal-054f12d0.woff",
-      "assets/inter-cyrillic-400-normal-a0d3fd1a.woff2",
-      "assets/inter-greek-ext-400-normal-35d593fc.woff2",
-      "assets/inter-greek-400-normal-98f517ea.woff2",
-      "assets/inter-latin-ext-400-normal-62ad1126.woff2",
-      "assets/inter-latin-400-normal-2069ee22.woff2"
+      "assets/app-02513978.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -50,7 +34,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-599213d2.js",
+    "file": "pages/index.svelte-c0712466.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -58,7 +42,8 @@
       "_vendor-6fa78954.js"
     ],
     "css": [
-      "assets/pages/index.svelte-28357101.css"
+      "assets/pages/index.svelte-28357101.css",
+      "assets/app-02513978.css"
     ]
   },
   "_vendor-6fa78954.js": {
