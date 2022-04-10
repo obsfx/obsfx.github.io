@@ -101,7 +101,6 @@
 
     h2 {
       margin-top: 4px;
-      color: #6b7177;
       letter-spacing: -0.5px;
 
       @media (max-width: 720px) {
@@ -115,9 +114,14 @@
 
     h1 {
       width: 100%;
+      font-size: 1.8rem;
+
+      @media (max-width: 720px) {
+        font-size: 1.5rem;
+      }
 
       a {
-        font-weight: 700;
+        font-weight: 900;
         color: #222222;
       }
     }
@@ -128,6 +132,10 @@
 
     @media (max-width: 720px) {
       padding: 16px 24px;
+    }
+
+    strong {
+      color: #222222;
     }
 
     p {
@@ -158,7 +166,7 @@
 
       a {
         color: #000000;
-        border-bottom: 1px dashed #ddd;
+        border-bottom: 1px dashed #333;
         text-decoration: none;
         font-weight: 500;
 
@@ -192,11 +200,25 @@
         font-weight: 500;
         padding: 2px 0px;
 
+        @media (max-width: 475px) {
+          display: flex;
+          flex-wrap: wrap;
+
+          &:not(:last-child) {
+            margin-bottom: 8px;
+          }
+        }
+
         span {
           color: #6b7177;
           min-width: 160px;
           display: inline-block;
           font-weight: normal;
+
+          @media (max-width: 475px) {
+            display: block;
+            width: 100%;
+          }
         }
 
         a {
