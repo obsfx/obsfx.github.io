@@ -106,7 +106,7 @@ const HomeDescription: React.FC = () => {
           href="https://github.com/obsfx/pocket-uniswap"
           isExternal
         >
-          pocket-uniwap
+          pocket-uniswap
         </MainDescriptionInlineLink>
         ,{" "}
         <MainDescriptionInlineLink
@@ -114,8 +114,8 @@ const HomeDescription: React.FC = () => {
           isExternal
         >
           m3k
-        </MainDescriptionInlineLink>{" "}
-        ,
+        </MainDescriptionInlineLink>
+        ,{" "}
         <MainDescriptionInlineLink
           href="https://github.com/obsfx/lurkdown"
           isExternal
@@ -137,7 +137,7 @@ const HomeDescription: React.FC = () => {
       </MainDescription>
 
       <MainDescription>
-        Contact me using{" "}
+        Contact me via{" "}
         <MainDescriptionInlineLink
           href="mailto:balandiomer@gmail.com"
           isExternal
