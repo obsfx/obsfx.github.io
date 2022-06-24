@@ -87,7 +87,7 @@ const HomeDescription: React.FC = () => {
       </MainDescription>
 
       <MainDescription>
-        See the some notable things that I made,{" "}
+        See the some notable things that I made;{" "}
         <MainDescriptionInlineLink
           href="https://github.com/obsfx/libgen-downloader"
           isExternal
@@ -137,7 +137,7 @@ const HomeDescription: React.FC = () => {
       </MainDescription>
 
       <MainDescription>
-        Contact me via{" "}
+        Best way to contact would be{" "}
         <MainDescriptionInlineLink
           href="mailto:balandiomer@gmail.com"
           isExternal
