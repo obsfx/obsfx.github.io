@@ -4,22 +4,25 @@ import Script from "next/script";
 export default function Document() {
   return (
     <Html>
-      <Head>{/* Global site tag (gtag.js) - Google Analytics*/}</Head>
-      <body>
-        <Script
+      <Head>
+        {/* Global site tag (gtag.js) - Google Analytics*/}
+        <script
+          async
           src="https://www.googletagmanager.com/gtag/js?id=G-10B5E0EP0C"
-          strategy="afterInteractive"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-10B5E0EP0C');
+            `,
+          }}
         />
-
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-10B5E0EP0C');
-          `}
-        </Script>
+      </Head>
+      <body>
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
