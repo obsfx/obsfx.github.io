@@ -1,5 +1,4 @@
 import { ArrowUpRight } from 'lucide-react';
-import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
 
@@ -17,7 +16,7 @@ export function ExternalLink({
   ...rest
 }: ExternalLinkProps) {
   return (
-    <Link
+    <a
       href={href}
       target='_blank'
       rel='noreferrer'
@@ -26,6 +25,6 @@ export function ExternalLink({
     >
       {children}
       <ArrowUpRight size={iconSize} />
-    </Link>
+    </a>
   );
 }
