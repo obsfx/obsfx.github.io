@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils';
 const LinkItems = [
   { href: '/', label: 'About' },
   { href: '/projects', label: 'Projects' },
-  { href: 'https://omercan.io/resume/Omercan-Balandi-Resume.pdf', label: 'Resume', external: true },
+  { href: '/Omercan-Balandi-Resume.pdf', label: 'Resume', external: true },
 ];
 
 export function Navigation() {
@@ -21,7 +21,21 @@ export function Navigation() {
 
       <div className='flex items-center text-xs'>
         {LinkItems.map(({ href, label, external }) => {
-          return (
+          return external ? (
+            <a
+              key={href}
+              href={href}
+              className={cn('inline-flex items-baseline rounded-md px-2 py-1 text-gray-400 ', {
+                'bg-gray-100 text-gray-900': pathname === href,
+                'hover:text-gray-900': pathname !== href,
+              })}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              {label}
+              <ArrowUpRight size={12} />
+            </a>
+          ) : (
             <Link
               key={href}
               href={href}
@@ -29,7 +43,6 @@ export function Navigation() {
                 'bg-gray-100 text-gray-900': pathname === href,
                 'hover:text-gray-900': pathname !== href,
               })}
-              {...(external && { target: '_blank', rel: 'noreferrer' })}
             >
               {label}
               {external && <ArrowUpRight size={12} />}
