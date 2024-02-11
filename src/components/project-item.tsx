@@ -18,8 +18,8 @@ export function ProjectItem({ title, description }: ProjectItemProps) {
     fetch(`https://api.github.com/repos/obsfx/${title}`)
       .then((response) => response.json())
       .then((data) => {
-        setStarCount(data.stargazers_count);
-        setForkCount(data.forks_count);
+        setStarCount(data.stargazers_count || 0);
+        setForkCount(data.forks_count || 0);
       });
   }, [title]);
 
