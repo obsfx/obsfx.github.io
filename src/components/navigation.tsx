@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils';
 const LinkItems = [
   { href: '/', label: 'About' },
   { href: '/projects', label: 'Projects' },
-  { href: '/Omercan-Balandi-Resume.pdf', label: 'Resume', external: true },
+  { href: '/resume/Omercan-Balandi-Resume.pdf', label: 'Resume', external: true },
 ];
 
 export function Navigation() {
