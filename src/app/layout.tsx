@@ -5,7 +5,6 @@ import { Inter } from 'next/font/google';
 import Script from 'next/script';
 
 import { Navigation } from '@/components/navigation';
-import { ScrollArea } from '@/components/ui/scroll-area';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -45,16 +44,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }}
       />
       <body className={inter.className}>
-        <ScrollArea className='h-full'>
-          <main className='h-screen md:flex md:flex-row md:justify-center'>
-            <div className='md:w-full md:min-w-[512px] md:max-w-xl'>
-              <div className='flex max-w-xl flex-col justify-start gap-8 px-4 py-16 md:px-8 md:py-24'>
-                <Navigation />
-                <div>{children}</div>
-              </div>
+        <main className='overflow-y-scroll md:flex md:flex-row md:justify-center'>
+          <div className='md:w-full md:min-w-[512px] md:max-w-xl'>
+            <div className='flex max-w-xl flex-col justify-start gap-8 px-4 py-16 md:px-8 md:py-24'>
+              <Navigation />
+              <div>{children}</div>
             </div>
-          </main>
-        </ScrollArea>
+          </div>
+        </main>
         <noscript>
           <iframe
             src='https://www.googletagmanager.com/ns.html?id=GTM-KJ8JVDFN'
