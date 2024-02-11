@@ -1,11 +1,12 @@
 export const projectData = [
   {
     name: 'libgen-downloader',
-    description: 'A simple command line tool to download books from libgen.io',
+    description:
+      'A command-line tool to search and download books from libgen. You can download books from multiple mirrors. It also supports bulk downloading. It has a responsive resizable UI that renders in your terminal.',
   },
   {
     name: 'console8',
-    description: 'Yet another chip8 emulator but  on your command line.',
+    description: 'Yet another chip8 emulator but works on your command line.',
   },
   {
     name: 'dungrain',
