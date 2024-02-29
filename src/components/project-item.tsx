@@ -11,39 +11,17 @@ interface ProjectItemProps {
 
 export function ProjectItem({ title, description }: ProjectItemProps) {
   const url = `https://github.com/obsfx/${title}`;
-  const [starCount, setStarCount] = useState(0);
-  const [forkCount, setForkCount] = useState(0);
-
-  useEffect(() => {
-    fetch(`https://api.github.com/repos/obsfx/${title}`)
-      .then((response) => response.json())
-      .then((data) => {
-        setStarCount(data.stargazers_count || 0);
-        setForkCount(data.forks_count || 0);
-      });
-  }, [title]);
 
   return (
     <Link
       target='_blank'
       href={url}
-      className='flex flex-col gap-2 rounded-md p-3 hover:bg-gray-50'
+      className='flex flex-col gap-1 rounded-md p-3 hover:bg-gray-50'
     >
-      <h2 className='flex items-center justify-between text-sm font-medium'>
+      <h2 className='flex items-baseline text-sm font-medium'>
         {title}
-        <ArrowUpRight size={14} className='text-gray-300' />
+        <ArrowUpRight size={14} className='text-gray-800' />
       </h2>
-
-      <div className='flex items-center gap-4 text-xs text-gray-500'>
-        <div className='flex items-center gap-0.5'>
-          <Star size={14} />
-          {starCount}
-        </div>
-        <div className='flex items-center gap-0.5'>
-          <GitFork size={14} />
-          {forkCount}
-        </div>
-      </div>
 
       <p className='text-xs text-gray-500'>{description}</p>
     </Link>

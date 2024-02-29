@@ -14,11 +14,11 @@ export function ThreeCubeCanvas() {
   return (
     <div
       className={cn(
-        'group relative h-16 w-16 select-none overflow-hidden rounded-lg bg-gray-50 bg-gradient-to-br transition-all ease-in-out hover:cursor-move',
+        'group relative h-12 w-12 select-none overflow-hidden rounded-full bg-gray-50 bg-gradient-to-br transition-all ease-in-out hover:scale-150 hover:cursor-move',
       )}
     >
       <Canvas>
-        <color attach='background' args={['#facc15']} />
+        <color attach='background' args={['#222']} />
         <spotLight
           position={[10, 10, 10]}
           angle={0.5}

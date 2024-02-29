@@ -16,17 +16,17 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className='flex items-center justify-between'>
+    <nav className='flex flex-col gap-4'>
       <ThreeCubeCanvas />
 
-      <div className='flex items-center text-xs'>
+      <div className='flex items-center gap-4 text-xs'>
         {LinkItems.map(({ href, label, external }) => {
           return external ? (
             <a
               key={href}
               href={href}
-              className={cn('inline-flex items-baseline rounded-md px-2 py-1 text-gray-400 ', {
-                'bg-gray-100 text-gray-900': pathname === href,
+              className={cn('inline-flex items-baseline rounded-md py-1 text-gray-400 ', {
+                'text-gray-900': pathname === href,
                 'hover:text-gray-900': pathname !== href,
               })}
               target='_blank'
@@ -39,8 +39,8 @@ export function Navigation() {
             <Link
               key={href}
               href={href}
-              className={cn('inline-flex items-baseline rounded-md px-2 py-1 text-gray-400 ', {
-                'bg-gray-100 text-gray-900': pathname === href,
+              className={cn('inline-flex items-baseline rounded-md py-1 text-gray-400 ', {
+                'text-gray-900': pathname === href,
                 'hover:text-gray-900': pathname !== href,
               })}
             >

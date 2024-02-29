@@ -21,14 +21,14 @@ export function ThreeBox({
     <mesh
       {...props}
       ref={meshRef}
-      scale={1.8}
+      scale={2}
       onClick={(event) => setActive(!active)}
       onPointerOver={(event) => setHover(true)}
       onPointerOut={(event) => setHover(false)}
     >
       <boxGeometry args={[1, 1, 1]} />
       <meshStandardMaterial color={'white'} />
-      <Outlines thickness={0.05} color='#1f2937' />
+      <Outlines thickness={0.05} color='#f4f4f4' />
     </mesh>
   );
 }

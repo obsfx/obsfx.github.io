@@ -47,7 +47,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <body className={cn(inter.className, 'overflow-y-scroll')}>
         <main className='md:flex md:flex-row md:justify-center'>
           <div className='md:w-full md:min-w-[512px] md:max-w-xl'>
-            <div className='flex max-w-xl flex-col justify-start gap-8 px-4 py-16 md:px-8 md:py-24'>
+            <div className='flex max-w-xl flex-col justify-start gap-6 px-4 py-16 md:px-8 md:py-24'>
               <Navigation />
               <div>{children}</div>
             </div>
