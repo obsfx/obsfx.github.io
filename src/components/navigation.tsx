@@ -16,7 +16,7 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className='flex flex-col gap-4'>
+    <nav className='flex flex-col gap-2'>
       <ThreeCubeCanvas />
 
       <div className='flex items-center gap-4 text-xs'>

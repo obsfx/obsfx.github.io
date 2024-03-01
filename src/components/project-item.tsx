@@ -16,7 +16,7 @@ export function ProjectItem({ title, description }: ProjectItemProps) {
     <Link
       target='_blank'
       href={url}
-      className='flex flex-col gap-1 rounded-md p-3 hover:bg-gray-50'
+      className='flex flex-col gap-1 rounded-md p-2 hover:bg-gray-50'
     >
       <h2 className='flex items-baseline text-sm font-medium'>
         {title}

@@ -14,7 +14,7 @@ export function ThreeCubeCanvas() {
   return (
     <div
       className={cn(
-        'group relative h-12 w-12 select-none overflow-hidden rounded-full bg-gray-50 bg-gradient-to-br transition-all ease-in-out hover:scale-150 hover:cursor-move',
+        'group relative h-10 w-10 select-none overflow-hidden rounded-full bg-gray-50 bg-gradient-to-br transition-all ease-in-out hover:cursor-move',
       )}
     >
       <Canvas>

@@ -3,14 +3,14 @@ import { Separator } from '@/components/ui/separator';
 
 export default function Home() {
   return (
-    <div className='flex flex-col gap-5'>
+    <div className='flex flex-col gap-4'>
       <title>About - Ömercan Balandı</title>
 
       <div className='flex flex-col'>
-        <h1 className='text-2xl font-bold text-black'>Ömercan Balandı</h1>
+        <h1 className='text-xl font-bold text-black'>Ömercan Balandı</h1>
       </div>
 
-      <div className='flex flex-col gap-6 text-sm text-gray-500'>
+      <div className='flex flex-col gap-4 text-xs text-gray-500'>
         <p>
           A passionate <span className='font-medium text-black'>software developer</span> based in{' '}
           <span className='font-medium text-black'>Izmir, Turkey</span>.
