@@ -1,28 +1,19 @@
+import { projectData } from '@/app/project-data';
 import { ExternalLink } from '@/components/external-link';
+import { ProjectItem } from '@/components/project-item';
 import { Separator } from '@/components/ui/separator';
 
 export default function Home() {
   return (
-    <div className='flex flex-col gap-4'>
+    <div className='flex flex-col gap-2 text-sm'>
       <title>About - Ömercan Balandı</title>
 
-      <div className='flex flex-col'>
-        <h1 className='text-xl font-bold text-black'>Ömercan Balandı</h1>
-      </div>
-
-      <div className='flex flex-col gap-4 text-xs text-gray-500'>
-        <p>
-          A passionate <span className='font-medium text-black'>software developer</span> based in{' '}
-          <span className='font-medium text-black'>Izmir, Turkey</span>.
-        </p>
+      <div className='flex flex-col gap-2'>
+        <p>A passionate software developer based in Izmir, Turkey.</p>
 
         <p>
-          Working on <span className='font-medium text-black'>web applications</span> mostly using{' '}
-          <span className='font-medium text-black'>TypeScript</span>,{' '}
-          <span className='font-medium text-black'>Nest.js</span>,{' '}
-          <span className='font-medium text-black'>React</span>,{' '}
-          <span className='font-medium text-black'>Next.js</span> and{' '}
-          <span className='font-medium text-black'>Vue</span>. Creating{' '}
+          Working on web applications mostly using TypeScript, Nest.js, React, Next.js and Vue.
+          Creating{' '}
           <ExternalLink href='https://github.com/obsfx/zero-ld46' iconSize={10}>
             games
           </ExternalLink>{' '}
@@ -60,9 +51,22 @@ export default function Home() {
 
       <Separator className='my-2' />
 
-      <div className='flex flex-col gap-4'>
-        <h2 className='text-sm font-medium text-black'>Contact</h2>
-        <p className='grid grid-cols-2 gap-x-4 text-xs md:gap-x-6'>
+      <div className='flex flex-col gap-2 text-sm'>
+        <h2 className='font-serif'>Projects</h2>
+        <p>The collection of projects I{"'"}ve created in my spare time over the years.</p>
+
+        <div className='my-2 grid gap-4 md:grid-cols-2'>
+          {projectData.map((project, index) => (
+            <ProjectItem key={index} title={project.name} description={project.description} />
+          ))}
+        </div>
+      </div>
+
+      <Separator className='my-2' />
+
+      <div className='flex flex-col gap-2'>
+        <h2 className='font-serif'>Contact</h2>
+        <p className='flex flex-col items-start'>
           <ExternalLink href='https://github.com/obsfx' iconSize={10}>
             github
           </ExternalLink>

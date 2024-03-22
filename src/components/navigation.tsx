@@ -8,7 +8,6 @@ import { cn } from '@/lib/utils';
 
 const LinkItems = [
   { href: '/', label: 'About' },
-  { href: '/projects', label: 'Projects' },
   { href: '/resume/Omercan-Balandi-Resume.pdf', label: 'Resume', external: true },
 ];
 
@@ -16,10 +15,13 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className='flex flex-col gap-2'>
-      <ThreeCubeCanvas />
+    <nav className='flex items-center justify-between gap-2 text-xs'>
+      {
+        //<ThreeCubeCanvas />
+      }
 
-      <div className='flex items-center gap-4 text-xs'>
+      <h1 className='font-serif text-sm'>Ömercan Balandı</h1>
+      <div className='flex items-center gap-4 '>
         {LinkItems.map(({ href, label, external }) => {
           return external ? (
             <a

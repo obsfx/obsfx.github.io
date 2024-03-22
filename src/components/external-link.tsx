@@ -20,7 +20,7 @@ export function ExternalLink({
       href={href}
       target='_blank'
       rel='noreferrer'
-      className={cn('inline-flex items-baseline font-medium text-black hover:underline', className)}
+      className={cn('inline-flex items-baseline underline hover:bg-gray-100', className)}
       {...rest}
     >
       {children}

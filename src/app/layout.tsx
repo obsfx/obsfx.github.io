@@ -1,13 +1,13 @@
 import '@/app/globals.css';
 
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+//import { Inter } from 'next/font/google';
 import Script from 'next/script';
 
 import { Navigation } from '@/components/navigation';
 import { cn } from '@/lib/utils';
 
-const inter = Inter({ subsets: ['latin'] });
+//const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   description: 'A passionate software developer based in Izmir, Turkey.',
@@ -45,13 +45,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }}
       />
 
-      <body className={cn(inter.className, 'overflow-y-scroll')}>
-        <main className='md:flex md:flex-row md:justify-center'>
-          <div className='md:w-full md:max-w-lg'>
-            <div className='flex max-w-xl flex-col justify-start gap-5 px-4 py-16 md:px-8 md:py-24'>
-              <Navigation />
-              <div>{children}</div>
-            </div>
+      <body className={cn('overflow-y-scroll')}>
+        <main className='px-4 py-8 sm:px-8 sm:pb-24 sm:pt-12'>
+          <div className='mx-auto max-w-xl'>
+            <Navigation />
+            <div className='mt-16'>{children}</div>
           </div>
         </main>
         <noscript>
