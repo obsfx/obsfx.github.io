@@ -79,8 +79,8 @@ export default function Home() {
           <ExternalLink href='https://obsfx.itch.io/' iconSize={10}>
             itch.io
           </ExternalLink>
-          <ExternalLink href='mailto:balandiomer@gmail.com' iconSize={10}>
-            balandiomer@gmail.com
+          <ExternalLink href='mailto:hello@omercan.io' iconSize={10}>
+            hello@omercan.io
           </ExternalLink>
           <ExternalLink href='https://www.linkedin.com/in/omercanbalandi/' iconSize={10}>
             linkedin
