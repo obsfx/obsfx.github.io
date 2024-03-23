@@ -67,6 +67,9 @@ export default function Home() {
       <div className='flex flex-col gap-2'>
         <h2 className='font-serif'>Contact</h2>
         <p className='flex flex-col items-start'>
+          <ExternalLink href='mailto:hello@omercan.io' iconSize={10}>
+            hello@omercan.io
+          </ExternalLink>
           <ExternalLink href='https://github.com/obsfx' iconSize={10}>
             github
           </ExternalLink>
@@ -78,9 +81,6 @@ export default function Home() {
           </ExternalLink>{' '}
           <ExternalLink href='https://obsfx.itch.io/' iconSize={10}>
             itch.io
-          </ExternalLink>
-          <ExternalLink href='mailto:hello@omercan.io' iconSize={10}>
-            hello@omercan.io
           </ExternalLink>
           <ExternalLink href='https://www.linkedin.com/in/omercanbalandi/' iconSize={10}>
             linkedin
