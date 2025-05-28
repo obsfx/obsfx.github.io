@@ -1,91 +1,162 @@
-import { projectData } from '@/app/project-data';
-import { ExternalLink } from '@/components/external-link';
-import { ProjectItem } from '@/components/project-item';
-import { Separator } from '@/components/ui/separator';
+import { LuArrowUpRight } from "react-icons/lu";
+import DraggableRepoRow from "./components/DraggableRepoRow";
+import clsx from "clsx";
 
 export default function Home() {
   return (
-    <div className='flex flex-col gap-2 text-sm'>
-      <title>About - Ömercan Balandı</title>
+    <div className={clsx("flex flex-col")}>
+      <div className={clsx("flex flex-col max-w-3xl lg:mx-auto p-4 pt-8 md:px-24 lg:px-32")}>
+        <div className={clsx("flex justify-between items-center gap-2")}>
+          <h1 className={clsx("text-xl font-serif mt-2")}>Ömercan Balandı</h1>
+          <a href="https://omercan.io/resume/Omercan-Balandi-Resume.pdf" target="_blank" rel="noreferrer" className="resume-link">
+            Resume
+            <LuArrowUpRight className={clsx("inline-block")} />
+          </a>
+        </div>
+        <p className={clsx("text-sm mt-8")}>
+          A passionate full-stack developer based in İzmir, Turkey.
+        </p>
 
-      <div className='flex flex-col gap-2'>
-        <p>A passionate software developer based in Izmir, Turkey.</p>
-
-        <p>
-          Working on web applications mostly using TypeScript, Nest.js, React, Next.js and Vue.
-          Creating{' '}
-          <ExternalLink href='https://github.com/obsfx/zero-ld46' iconSize={10}>
+        <p className={clsx("text-sm mt-2")}>
+          Working on web applications, mostly using React, Next.js, TypeScript,
+          Nest.js, and Go. Creating{" "}
+          <a
+            href="https://github.com/obsfx/zero-ld46"
+            target="_blank"
+            rel="noreferrer"
+          >
             games
-          </ExternalLink>{' '}
-          and{' '}
-          <ExternalLink href='https://codepen.io/obsfx' iconSize={10}>
-            codepen
-          </ExternalLink>{' '}
-          demos in spare time. Crafting{' '}
-          <ExternalLink href='https://github.com/obsfx/libgen-downloader' iconSize={10}>
+            <LuArrowUpRight className={clsx("inline-block")} />
+          </a>{" "}
+          and{" "}
+          <a href="https://codepen.io/obsfx" target="_blank" rel="noreferrer">
+            CodePen
+            <LuArrowUpRight className={clsx("inline-block")} />
+          </a>{" "}
+          demos in my spare time. Crafting{" "}
+          <a
+            href="https://github.com/obsfx/libgen-downloader"
+            target="_blank"
+            rel="noreferrer"
+          >
             command-line tools
-          </ExternalLink>
-          ,{' '}
-          <ExternalLink href='https://github.com/obsfx/lurkdown' iconSize={10}>
+            <LuArrowUpRight className={clsx("inline-block")} />
+          </a>
+          ,{" "}
+          <a
+            href="https://github.com/obsfx/lurkdown"
+            target="_blank"
+            rel="noreferrer"
+          >
             small compilers
-          </ExternalLink>{' '}
-          and{' '}
-          <ExternalLink href='https://omercan.io/m3k' iconSize={10}>
+            <LuArrowUpRight className={clsx("inline-block")} />
+          </a>{" "}
+          and{" "}
+          <a href="https://omercan.io/m3k" target="_blank" rel="noreferrer">
             toy programming languages
-          </ExternalLink>{' '}
+            <LuArrowUpRight className={clsx("inline-block")} />
+          </a>{" "}
           just for fun.
         </p>
 
-        <p>
-          Loves using{' '}
-          <ExternalLink href='https://neovim.io/' iconSize={10}>
-            Neovim
-          </ExternalLink>
-          . Here are the{' '}
-          <ExternalLink href='https://github.com/obsfx/dotfiles' iconSize={10}>
-            dotfiles
-          </ExternalLink>
-          .
+        <p className={clsx("text-sm mt-2")}>
+          <span className={clsx("line-through opacity-50")}>
+            Loved using{" "}
+            <a href="https://neovim.io" target="_blank" rel="noreferrer">
+              Neovim
+              <LuArrowUpRight className={clsx("inline-block")} />
+            </a>
+            . Here are my{" "}
+            <a
+              href="https://github.com/obsfx/dotfiles"
+              target="_blank"
+              rel="noreferrer"
+            >
+              dotfiles
+              <LuArrowUpRight className={clsx("inline-block")} />
+            </a>
+            .
+          </span>{" "}
+          <span>
+            Switched to{" "}
+            <a href="https://www.cursor.com" target="_blank" rel="noreferrer">
+              Cursor
+              <LuArrowUpRight className={clsx("inline-block")} />
+            </a>{" "}
+            to experiment with AI agents. Using it with{" "}
+            <a
+              href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim"
+              target="_blank"
+            >
+              Vim
+              <LuArrowUpRight className={clsx("inline-block")} />
+            </a>{" "}
+            mode. Sometimes using{" "}
+            <a href="https://www.jetbrains.com/idea/" target="_blank">
+              IntelliJ IDEA
+              <LuArrowUpRight className={clsx("inline-block")} />
+            </a>{" "}
+            for debugging sessions.
+          </span>
         </p>
       </div>
 
-      <Separator className='my-2' />
-
-      <div className='flex flex-col gap-2 text-sm'>
-        <h2 className='font-serif'>Projects</h2>
-        <p>The collection of projects I{"'"}ve created in my spare time over the years.</p>
-
-        <div className='my-2 grid gap-4 md:grid-cols-2'>
-          {projectData.map((project, index) => (
-            <ProjectItem key={index} title={project.name} description={project.description} />
-          ))}
+      <div className={clsx("w-full pt-8")}>
+        <p className={clsx("text-sm max-w-3xl lg:mx-auto px-4 md:px-24 lg:px-32")}>
+          Some experiments and side projects I've created over the years to
+          observe, learn, and have fun.
+        </p>
+        <div className={clsx("relative")}>
+          <DraggableRepoRow />
         </div>
       </div>
 
-      <Separator className='my-2' />
-
-      <div className='flex flex-col gap-2'>
-        <h2 className='font-serif'>Contact</h2>
-        <p className='flex flex-col items-start'>
-          <ExternalLink href='mailto:hello@omercan.io' iconSize={10}>
-            hello@omercan.io
-          </ExternalLink>
-          <ExternalLink href='https://github.com/obsfx' iconSize={10}>
-            github
-          </ExternalLink>
-          <ExternalLink href='https://www.npmjs.com/~obsfx' iconSize={10}>
-            npm
-          </ExternalLink>
-          <ExternalLink href='https://codepen.io/obsfx' iconSize={10}>
-            codepen
-          </ExternalLink>{' '}
-          <ExternalLink href='https://obsfx.itch.io/' iconSize={10}>
-            itch.io
-          </ExternalLink>
-          <ExternalLink href='https://www.linkedin.com/in/omercanbalandi/' iconSize={10}>
-            linkedin
-          </ExternalLink>
-        </p>
+      <div className={clsx("flex flex-col gap-0.5 contacts max-w-3xl w-full lg:mx-auto flex-1 items-start px-4 md:px-24 lg:px-32 pt-12")}>
+        {[
+          {
+            label: "mail",
+            value: "hello@omercan.io",
+            href: "mailto:hello@omercan.io",
+          },
+          {
+            label: "linkedin",
+            value: "linkedin.com/in/omercanbalandi",
+            href: "https://www.linkedin.com/in/omercanbalandi/",
+          },
+          {
+            label: "github",
+            value: "github.com/obsfx",
+            href: "https://github.com/obsfx",
+          },
+          {
+            label: "npm",
+            value: "npmjs.com/~obsfx",
+            href: "https://www.npmjs.com/~obsfx",
+          },
+          {
+            label: "codepen",
+            value: "codepen.io/obsfx",
+            href: "https://codepen.io/obsfx",
+          },
+          {
+            label: "itch.io",
+            value: "obsfx.itch.io",
+            href: "https://obsfx.itch.io/",
+          },
+        ].map(({ label, value, href }) => (
+          <a
+            key={label}
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+            className={clsx("contact-row")}
+          >
+            <span className={clsx("contact-value")}>
+              {value}
+              <LuArrowUpRight className={clsx("inline-block")} />
+            </span>
+          </a>
+        ))}
       </div>
     </div>
   );

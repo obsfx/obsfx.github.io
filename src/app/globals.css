@@ -1,108 +1,157 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+:root {
+  --background-color: #FFFCF0; /* paper (bg) */
+  --background-color-secondary: #F2F0E5; /* base-50 (bg-2) */
+  --background-color-tertiary: #E6E4D9; /* base-100 (ui) */
+  --background-translucent: rgba(16, 15, 15, 0.06); /* black, 6% */
+  --background-translucent-hover: rgba(16, 15, 15, 0.1); /* black, 10% */
+  --text-color: #100F0F; /* black (tx) */
+  --text-color-secondary: #6F6E69; /* base-600 (tx-2) */
+  --secondary-color: #B7B5AC; /* base-300 (tx-3) */
+  --border-color: #CECDC3; /* base-200 (ui-3) */
+  --primary-color: #66800B; /* green-600 (gr) */
+  --primary-color-hover: #879A39; /* green-400 (gr-2) */
+  --error-color: #AF3029; /* red-600 (re) */
+  --warning-color: #BC5215; /* orange-600 (or) */
+  --info-color: #24837B; /* cyan-600 (cy) */
+  --link-color: #205EA6; /* blue-600 (bl) */
+  --accent-color: #5E409D; /* purple-600 (pu) */
+  --magenta-color: #A02F6F; /* magenta-600 (ma) */
+}
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-inter), sans-serif;
+}
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+.font-serif {
+  font-family: var(--font-source-serif-4), serif;
+}
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+.resume-link {
+  @apply text-sm text-gray-600 flex items-center px-3 py-2 rounded-3xl;
+  color: var(--text-color-secondary);
+  background-color: var(--background-color-secondary);
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+  &:hover {
+    @apply text-white bg-blue-500;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+  svg {
+    @apply inline-block text-sm;
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
+p {
+  color: var(--text-color-secondary);
+  line-height: 1.5;
+
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-color);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .06);
+    }
+
+    svg {
+      @apply inline-block text-sm;
+    }
   }
-  html {
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-    font-family:
-      ui-sans-serif,
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      Segoe UI,
-      Roboto,
-      Helvetica Neue,
-      Arial,
-      Noto Sans,
-      sans-serif,
-      Apple Color Emoji,
-      Segoe UI Emoji,
-      Segoe UI Symbol,
-      Noto Color Emoji;
-    font-feature-settings: normal;
-    font-variation-settings: normal;
+}
+
+.contacts {
+  @apply text-sm;
+
+  svg {
+    @apply shrink-0
   }
-  ::selection {
-    @apply bg-gray-200 text-gray-900;
+
+  .contact-row {
+    display: inline-flex;
+    align-items: baseline;
+    color: var(--text-color-secondary);
+    text-decoration: none;
+    border: none;
+    gap: 0.5rem;
+
+    &:hover {
+      background-color: var(--background-translucent-hover);
+    }
   }
-  body {
-    @apply bg-background text-foreground;
+
+  .contact-value {
+    flex: 0 0 auto;
+    text-align: right;
+    white-space: nowrap;
+
+    svg {
+      @apply text-xs -mt-0.5;
+    }
   }
-  .micro-5-regular {
-    font-family: 'Micro 5', sans-serif;
-    font-weight: 400;
-    font-style: normal;
+}
+
+.hr {
+  @apply max-w-xl w-full mx-auto my-8;
+  border-top: 1px solid var(--border-color);
+  opacity: 0.5;
+}
+
+.card {
+  background-color: var(--background-color-secondary);
+
+  &:hover {
+    @apply ring-2 ring-blue-500;
+  }
+
+  a {
+    @apply text-sm text-gray-600 flex items-center px-3 py-2 rounded-3xl -ml-3;
+    background-color: transparent;
+    color: var(--text-color);
+
+    &:hover {
+      @apply text-white bg-blue-500;
+    }
+
+    svg {
+      @apply text-xs -mt-0.5;
+    }
+  }
+}
+
+::selection {
+  background: #ECCB60; /* Flexoki yellow-200 */
+  color: #100F0F;      /* Flexoki black */
+}
+
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Webkit */
+}
+
+.draggable-arrow {
+  @apply rounded-3xl px-3 py-2 opacity-90 text-white text-sm flex items-center gap-2 font-semibold bg-blue-500;
+  animation: draggable-arrow-animation 5s infinite;
+
+  svg {
+    @apply text-lg shrink-0;
+  }
+}
+
+@keyframes draggable-arrow-animation {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-10px);
   }
 }
