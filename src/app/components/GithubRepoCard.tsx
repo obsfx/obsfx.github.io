@@ -1,5 +1,4 @@
 import { LuArrowUpRight } from "react-icons/lu";
-import { FaGithub } from "react-icons/fa";
 import clsx from "clsx";
 
 interface GithubRepoCardProps {
@@ -7,7 +6,6 @@ interface GithubRepoCardProps {
   description: string;
   html_url: string;
   media?: string;
-  media_bg?: string;
 }
 
 export function GithubRepoCard({
@@ -15,7 +13,6 @@ export function GithubRepoCard({
   description,
   html_url,
   media,
-  media_bg,
 }: GithubRepoCardProps) {
   return (
     <div

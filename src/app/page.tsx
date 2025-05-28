@@ -103,7 +103,7 @@ export default function Home() {
 
       <div className={clsx("w-full pt-8")}>
         <p className={clsx("text-sm max-w-3xl lg:mx-auto px-4 md:px-24 lg:px-32")}>
-          Some experiments and side projects I've created over the years to
+          Some experiments and side projects I&apos;ve created over the years to
           observe, learn, and have fun.
         </p>
         <div className={clsx("relative")}>

@@ -5,14 +5,12 @@ export const githubRepos = [
     description: "A simple tool to search for and download ebooks from Libgen via a terminal user interface.",
     html_url: "https://github.com/obsfx/libgen-downloader",
     media: "/media/libgen-downloader.mp4",
-    media_bg: "#000000",
   },
   {
     name: "react-optimized-dnd",
     description: "A dead simple React library to build drag-and-drop interfaces with less confusion and less work.",
     html_url: "https://github.com/obsfx/react-optimized-dnd",
     media: "/media/react-optimized-dnd.mp4",
-    media_bg: "#f2f2f4",
   },
   {
     name: "zero",
