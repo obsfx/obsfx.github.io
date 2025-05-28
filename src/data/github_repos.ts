@@ -22,15 +22,17 @@ export const githubRepos = [
     name: "m3k",
     description: "A Lisp dialect and experimental toy programming language, created after reading 'Crafting Interpreters' by Robert Nystrom.",
     html_url: "https://github.com/obsfx/m3k",
-  },
-  {
-    name: "console8",
-    description: "Yet another CHIP-8 emulator, but it works in your terminal.",
-    html_url: "https://github.com/obsfx/console8",
+    media: "/media/m3k.mp4",
   },
   {
     name: "dungrain",
     description: "A procedural dungeon generation utility using Binary Space Partitioning under the hood.",
     html_url: "https://github.com/obsfx/dungrain",
+    media: "/media/dungrain.mp4",
+  },
+  {
+    name: "console8",
+    description: "Yet another CHIP-8 emulator, but it works in your terminal.",
+    html_url: "https://github.com/obsfx/console8",
   },
 ]; 

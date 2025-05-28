@@ -40,7 +40,7 @@ export function GithubRepoCard({
           loop
           muted
           className={clsx(
-            "left-0 w-full h-full object-left-top scale-[2] translate-y-1/2 translate-x-1/2"
+            "left-0 w-full h-full object-left-top scale-[1.75] translate-y-1/2 translate-x-1/3"
           )}
         />
       )}

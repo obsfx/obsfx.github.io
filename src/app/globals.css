@@ -18,12 +18,19 @@
   --link-color: #205EA6; /* blue-600 (bl) */
   --accent-color: #5E409D; /* purple-600 (pu) */
   --magenta-color: #A02F6F; /* magenta-600 (ma) */
+  --green-color: rgb(35, 160, 80);
+  --green-color-hover: rgba(35, 160, 80, 0.25);
 }
 
 body {
   background: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-inter), sans-serif;
+}
+
+.name-title {
+  color: var(--green-color);
+  @apply font-semibold
 }
 
 .font-serif {
@@ -36,7 +43,8 @@ body {
   background-color: var(--background-color-secondary);
 
   &:hover {
-    @apply text-white bg-blue-500;
+    background-color: var(--green-color);
+    color: rgb(255, 255, 255);
   }
 
   svg {
@@ -84,9 +92,9 @@ p {
   }
 
   .contact-value {
-    flex: 0 0 auto;
-    text-align: right;
     white-space: nowrap;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-color);
 
     svg {
       @apply text-xs -mt-0.5;
@@ -103,22 +111,27 @@ p {
 .card {
   background-color: var(--background-color-secondary);
 
-  &:hover {
-    @apply ring-2 ring-blue-500;
-  }
-
   a {
     @apply text-sm text-gray-600 flex items-center px-3 py-2 rounded-3xl -ml-3;
     background-color: transparent;
     color: var(--text-color);
 
     &:hover {
-      @apply text-white bg-blue-500;
+      background-color: var(--green-color);
+      color: rgb(255, 255, 255);
     }
 
     svg {
       @apply text-xs -mt-0.5;
     }
+  }
+
+  video {
+    @apply ml-8 rounded-lg ring-gray-200 transition-all duration-500;
+  }
+
+  &:hover {
+    background-color: var(--green-color-hover);
   }
 }
 
@@ -136,8 +149,10 @@ p {
 }
 
 .draggable-arrow {
-  @apply rounded-3xl px-3 py-2 opacity-90 text-white text-sm flex items-center gap-2 font-semibold bg-blue-500;
+  @apply rounded-3xl px-3 py-2 opacity-90 text-sm flex items-center gap-2 font-semibold;
   animation: draggable-arrow-animation 5s infinite;
+  background-color: var(--green-color);
+  color: rgb(255, 255, 255) !important;
 
   svg {
     @apply text-lg shrink-0;

@@ -7,7 +7,7 @@ export default function Home() {
     <div className={clsx("flex flex-col")}>
       <div className={clsx("flex flex-col max-w-3xl lg:mx-auto p-4 pt-8 md:px-24 lg:px-32")}>
         <div className={clsx("flex justify-between items-center gap-2")}>
-          <h1 className={clsx("text-xl font-serif mt-2")}>Ömercan Balandı</h1>
+          <h1 className={clsx("text-2xl font-serif mt-2 name-title")}>Ömercan Balandı</h1>
           <a href="https://omercan.io/resume/Omercan-Balandi-Resume.pdf" target="_blank" rel="noreferrer" className="resume-link">
             Resume
             <LuArrowUpRight className={clsx("inline-block")} />
