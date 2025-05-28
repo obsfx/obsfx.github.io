@@ -1,16 +1,21 @@
-import '@/app/globals.css';
-
-import type { Metadata } from 'next';
-//import { Inter } from 'next/font/google';
+import type { Metadata } from "next";
 import Script from 'next/script';
+import { Inter, Source_Serif_4 } from "next/font/google";
+import "./globals.css";
 
-import { Navigation } from '@/components/navigation';
-import { cn } from '@/lib/utils';
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
 
-//const inter = Inter({ subsets: ['latin'] });
+const sourceSerif4 = Source_Serif_4({
+  variable: "--font-source-serif-4",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  description: 'A passionate software developer based in Izmir, Turkey.',
+  title: "Omercan Balandi",
+  description: "A passionate software developer based in Izmir, Turkey.",
 };
 
 export default function RootLayout({
@@ -19,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
-      <Script
+    <html lang="en">
+            <Script
         id='tagmanager-ga4'
         dangerouslySetInnerHTML={{
           __html: `
@@ -44,22 +49,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           `,
         }}
       />
-
-      <body className={cn('overflow-y-scroll')}>
-        <main className='px-4 py-8 sm:px-8 sm:pb-24 sm:pt-12'>
-          <div className='mx-auto max-w-xl'>
-            <Navigation />
-            <div className='mt-16'>{children}</div>
-          </div>
-        </main>
-        <noscript>
-          <iframe
-            src='https://www.googletagmanager.com/ns.html?id=GTM-KJ8JVDFN'
-            height='0'
-            width='0'
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
+      <body
+        className={`${inter.variable} ${sourceSerif4.variable} antialiased py-12 overflow-y-scroll`}
+      >
+        {children}
       </body>
     </html>
   );
