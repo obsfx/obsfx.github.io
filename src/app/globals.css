@@ -115,6 +115,7 @@ p {
 
 .card {
   background-color: var(--background-secondary);
+  @apply ring-1 ring-gray-200;
 
   a {
     @apply text-sm text-gray-600 flex items-center px-3 py-2 rounded-3xl -ml-3;
@@ -136,7 +137,7 @@ p {
   }
 
   &:hover {
-    background-color: var(--accent-translucent);
+    @apply ring-2 ring-gray-300;
   }
 }
 
