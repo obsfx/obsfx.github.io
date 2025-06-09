@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from 'next/script';
-import { Inter, Source_Serif_4 } from "next/font/google";
+import { Inter, Lora } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -8,8 +8,8 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const sourceSerif4 = Source_Serif_4({
-  variable: "--font-source-serif-4",
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
 });
 
@@ -50,7 +50,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }}
       />
       <body
-        className={`${inter.variable} ${sourceSerif4.variable} antialiased py-12 overflow-y-scroll`}
+        className={`${inter.variable} ${lora.variable} antialiased py-12 lg:py-24 overflow-y-scroll`}
       >
         {children}
       </body>
