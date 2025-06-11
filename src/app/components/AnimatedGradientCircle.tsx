@@ -83,10 +83,10 @@ export default function AnimatedGradientCircle({
   className = "",
 }: AnimatedGradientCircleProps) {
   return (
-    <div className="relative bg-black/25 rounded-full overflow-hidden hover:scale-[2.75] transition-all duration-500 ease-in-out">
+    <div className="relative bg-black/25  overflow-hidden hover:scale-[3.75] transition-all duration-500 ease-in-out">
       {/* Base Three.js animation */}
       <div
-        className={`rounded-full overflow-hidden ${className}`}
+        className={` overflow-hidden ${className}`}
         style={{ width: size, height: size }}
       >
         <Canvas
@@ -99,12 +99,12 @@ export default function AnimatedGradientCircle({
       
       {/* Glossy highlight layers */}
       <div 
-        className="absolute inset-0 rounded-full pointer-events-none"
+        className="absolute inset-0  pointer-events-none z-1"
         style={{ width: size, height: size }}
       >
         {/* Main highlight */}
         <div 
-          className="absolute rounded-full bg-gradient-to-br from-white/40 via-white/10 to-transparent blur-sm"
+          className="absolute  bg-gradient-to-br from-white/40 via-white/10 to-transparent blur-sm z-1"
           style={{
             width: size * 0.6,
             height: size * 0.6,
@@ -115,7 +115,7 @@ export default function AnimatedGradientCircle({
         
         {/* Secondary smaller highlight */}
         <div 
-          className="absolute rounded-full bg-gradient-to-br from-white/60 via-white/20 to-transparent blur-xs"
+          className="absolute  bg-gradient-to-br from-white/60 via-white/20 to-transparent blur-xs z-1"
           style={{
             width: size * 0.25,
             height: size * 0.25,
@@ -126,7 +126,7 @@ export default function AnimatedGradientCircle({
         
         {/* Edge shine */}
         <div 
-          className="absolute inset-0 rounded-full bg-gradient-to-t from-transparent via-white/5 to-white/20 blur-sm"
+          className="absolute inset-0  bg-gradient-to-t from-transparent via-white/5 to-white/20 blur-sm z-1"
           style={{ width: size, height: size }}
         />
       </div>
