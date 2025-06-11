@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from 'next/script';
-import { Inter, Lora } from "next/font/google";
+import { Inter, Lora, Workbench} from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -11,6 +11,12 @@ const inter = Inter({
 const lora = Lora({
   variable: "--font-lora",
   subsets: ["latin"],
+});
+
+const workbench = Workbench({
+  variable: "--font-workbench",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -50,7 +56,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }}
       />
       <body
-        className={`${inter.variable} ${lora.variable} antialiased py-12 lg:py-24 overflow-y-scroll`}
+        className={`${inter.variable} ${lora.variable} ${workbench.variable} antialiased overflow-y-scroll`}
       >
         {children}
       </body>

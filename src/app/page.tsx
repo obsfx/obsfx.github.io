@@ -1,25 +1,39 @@
 import { LuArrowUpRight } from "react-icons/lu";
-import DraggableRepoRow from "./components/DraggableRepoRow";
 import clsx from "clsx";
+import AnimatedGradientCircle from "./components/AnimatedGradientCircle";
 
 export default function Home() {
   return (
-    <div className={clsx("flex flex-col")}>
-      <div className={clsx("flex flex-col max-w-3xl lg:mx-auto p-4 pt-8 md:px-24 lg:px-32")}>
+    <div className={clsx("flex flex-col min-h-screen justify-center")}>
+      <div
+        className={clsx(
+          "flex flex-col max-w-3xl lg:mx-auto p-4 md:px-24 lg:px-32"
+        )}
+      >
         <div className={clsx("flex justify-between items-center gap-2")}>
-          <h1 className={clsx("text-2xl font-serif mt-2 name-title")}>Ömercan Balandı</h1>
-          <a href="https://omercan.io/resume/Omercan-Balandi-Resume.pdf" target="_blank" rel="noreferrer" className="resume-link">
+          {
+            // <h1 className={clsx("text-4xl font-serif mt-2 name-title")}>
+            //   omercan balandi
+            // </h1>
+          }
+          <AnimatedGradientCircle size={48} />
+          <a
+            href="https://omercan.io/resume/Omercan-Balandi-Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="resume-link"
+          >
             Resume
             <LuArrowUpRight className={clsx("inline-block")} />
           </a>
         </div>
         <p className={clsx("text-sm mt-8")}>
-          A passionate full-stack developer based in İzmir, Turkey.
+          A full-stack developer based in Izmir, Turkey.
         </p>
 
         <p className={clsx("text-sm mt-2")}>
-          Working on web applications, mostly using React, Next.js, TypeScript,
-          Nest.js, and Go. Creating{" "}
+          Working on web applications using React, Next.js, TypeScript, Nest.js,
+          and Go. Creating{" "}
           <a
             href="https://github.com/obsfx/zero-ld46"
             target="_blank"
@@ -61,7 +75,7 @@ export default function Home() {
 
         <p className={clsx("text-sm mt-2")}>
           <span className={clsx("line-through opacity-50")}>
-            Loved using{" "}
+            Loves using{" "}
             <a href="https://neovim.io" target="_blank" rel="noreferrer">
               Neovim
               <LuArrowUpRight className={clsx("inline-block")} />
@@ -101,17 +115,25 @@ export default function Home() {
         </p>
       </div>
 
-      <div className={clsx("w-full pt-8")}>
-        <p className={clsx("text-sm max-w-3xl lg:mx-auto px-4 md:px-24 lg:px-32")}>
-          Some experiments and side projects I&apos;ve created over the years to
-          observe, learn, and have fun.
-        </p>
-        <div className={clsx("relative")}>
-          <DraggableRepoRow />
-        </div>
-      </div>
+      {
+        // <div className={clsx("w-full pt-4")}>
+        //   <p className={clsx("text-sm max-w-3xl lg:mx-auto px-4 md:px-24 lg:px-32")}>
+        //     Some experiments and side projects I&apos;ve created over the years to
+        //     observe, learn, and have fun.
+        //   </p>
+        //   {
+        //     // <div className={clsx("relative")}>
+        //     //   <DraggableRepoRow />
+        //     // </div>
+        //   }
+        // </div>
+      }
 
-      <div className={clsx("flex flex-col gap-0.5 contacts max-w-3xl w-full lg:mx-auto flex-1 items-start px-4 md:px-24 lg:px-32 pt-12")}>
+      <div
+        className={clsx(
+          "flex flex-col gap-0.5 contacts max-w-3xl w-full lg:mx-auto items-start px-4 md:px-24 lg:px-32"
+        )}
+      >
         {[
           {
             label: "mail",

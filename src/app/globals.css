@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FFFFFF; /* white background */
+  --background: #013be9; /* white background */
   --background-secondary: #F5F5F5; /* light gray */
   --background-tertiary: #E5E5E5; /* medium light gray */
   --background-translucent: rgba(0, 0, 0, 0.06); /* black, 6% */
   --background-translucent-hover: rgba(0, 0, 0, 0.1); /* black, 10% */
-  --text: #000000; /* black text */
-  --text-secondary: #666666; /* medium gray text */
-  --text-tertiary: #999999; /* light gray text */
-  --border: #CCCCCC; /* light gray border */
-  --accent: #333333; /* dark gray for primary actions */
+  --text: rgb(255, 255, 255, 0.7); /* black text */
+  --text-secondary: rgb(255, 255, 255, 0.5); /* medium gray text */
+  --text-tertiary: #ffffff; /* light gray text */
+  --border: #ffffff; /* light gray border */
+  --accent: rgb(255, 255, 255, 0.75); /* dark gray for primary actions */
   --accent-hover: #555555; /* medium dark gray hover */
   --interactive: #444444; /* dark gray for interactive elements */
   --interactive-secondary: #666666; /* medium gray for secondary interactions */
@@ -48,7 +48,7 @@ body {
   background-color: transparent;
 
   &:hover {
-    background-color: var(--accent);
+    background-color: rgba(0, 0, 0, .45);
     color: rgb(255, 255, 255);
   }
 
@@ -59,7 +59,7 @@ body {
 
 p {
   color: var(--text-secondary);
-  line-height: 1.5;
+  line-height: 1.6;
 
   a {
     color: var(--text);
@@ -67,7 +67,7 @@ p {
     border-bottom: 1px solid var(--border);
 
     &:hover {
-      background-color: rgba(0, 0, 0, .06);
+      background-color: rgba(0, 0, 0, .45);
     }
 
     svg {
@@ -92,13 +92,12 @@ p {
     gap: 0.5rem;
 
     &:hover {
-      background-color: var(--background-translucent-hover);
+      background-color: rgba(0, 0, 0, .45);
     }
   }
 
   .contact-value {
     white-space: nowrap;
-    border-bottom: 1px solid var(--border);
     color: var(--text);
 
     svg {
