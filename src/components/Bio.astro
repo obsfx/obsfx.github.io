@@ -33,8 +33,10 @@ import ResumeButton from "@/src/components/ResumeButton.astro";
 
 <script>
   import { ExperienceClock } from "@/src/lib/experience-clock";
+  import { TooltipBounds } from "@/src/lib/tooltip-bounds";
 
   ExperienceClock.start();
+  TooltipBounds.start();
 </script>
 
 <style>
@@ -72,23 +74,27 @@ import ResumeButton from "@/src/components/ResumeButton.astro";
     position: absolute;
     inset-block-end: calc(100% + 0.5rem);
     inset-inline-start: 50%;
-    translate: -50% 0.25rem;
+    inline-size: max-content;
+    max-inline-size: calc(100vw - 1.5rem);
+    translate: calc(-50% + var(--tooltip-shift, 0px)) 0;
+    transform: translateY(0.25rem);
     padding: 0.35rem 0.6rem;
     border-radius: 0.5rem;
     background: var(--fg);
     color: var(--bg);
     font-size: 0.75rem;
     line-height: 1.3;
+    white-space: normal;
     opacity: 0;
     pointer-events: none;
     transition:
       opacity 160ms ease-out,
-      translate 160ms ease-out;
+      transform 160ms ease-out;
   }
 
   .experience:hover .experience__tooltip,
   .experience:focus-visible .experience__tooltip {
     opacity: 1;
-    translate: -50% 0;
+    transform: none;
   }
 </style>
