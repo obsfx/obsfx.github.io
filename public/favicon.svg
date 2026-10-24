@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <path id="blob" d="M59.87 32.76C60.15 36.81 59.02 41.57 57.24 45.33C55.45 49.09 52.43 52.81 49.13 55.33C45.83 57.86 41.5 59.64 37.45 60.48C33.4 61.32 28.94 61.13 24.83 60.34C20.72 59.56 16.04 58.27 12.8 55.74C9.55 53.21 6.79 49 5.35 45.17C3.9 41.34 4 36.83 4.13 32.76C4.27 28.68 4.66 24.51 6.14 20.72C7.62 16.94 9.97 12.92 13.02 10.05C16.07 7.19 20.34 4.54 24.45 3.52C28.57 2.5 33.76 2.61 37.7 3.93C41.65 5.25 45.15 8.6 48.12 11.45C51.09 14.29 53.58 17.45 55.53 21C57.49 24.55 59.58 28.7 59.87 32.76Z" />
+    <clipPath id="clip">
+      <use href="#blob" />
+    </clipPath>
+    <filter id="blend" x="-32" y="-32" width="128" height="128" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="7" />
+    </filter>
+    <filter id="soften">
+      <feGaussianBlur stdDeviation="1.6" />
+    </filter>
+    <radialGradient id="shade" cx="22" cy="18" r="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0.45" stop-color="#000" stop-opacity="0" />
+      <stop offset="1" stop-color="#000" stop-opacity="0.25" />
+    </radialGradient>
+  </defs>
+  <g clip-path="url(#clip)">
+    <g filter="url(#blend)">
+      <rect x="-32" y="-32" width="128" height="128" fill="#ff7ab8" />
+      <circle cx="12" cy="40" r="19" fill="#5ef0e0" />
+      <circle cx="34" cy="18" r="15" fill="#ff8c5c" />
+      <circle cx="46" cy="63" r="15" fill="#0f1a38" />
+    </g>
+    <use href="#blob" fill="url(#shade)" />
+    <use href="#blob" fill="none" stroke="#fff" stroke-opacity="0.3" stroke-width="5" filter="url(#soften)" />
+  </g>
+</svg>
