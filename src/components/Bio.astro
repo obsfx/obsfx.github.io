@@ -1,0 +1,94 @@
+---
+import { Experience } from "@/src/lib/experience";
+import ExternalLink from "@/src/components/ExternalLink.astro";
+import ResumeButton from "@/src/components/ResumeButton.astro";
+---
+
+<div class="bio">
+  <p class="intro">A full-stack developer based in Izmir, Turkey.</p>
+  <ResumeButton />
+  <p>
+    Working at <ExternalLink href="https://www.oakslab.com/">OAK'S LAB</ExternalLink>, helping products
+    succeed as part of international teams at European and US-based companies. <span
+      class="experience"
+      tabindex="0"
+      aria-describedby="career-start"
+      data-orb-focus="1"
+      ><span data-experience>{Experience.format(new Date())}</span><span
+        class="experience__tooltip"
+        role="tooltip"
+        id="career-start">Started my professional career in {Experience.careerStartLabel}</span
+      ></span
+    > of experience in software development.
+  </p>
+  <p>
+    Outside of work, building tools like <ExternalLink href="https://github.com/obsfx/trekker" orb={0}>trekker</ExternalLink>, <ExternalLink href="https://github.com/obsfx/promptscout" orb={1}>promptscout</ExternalLink>, and <ExternalLink href="https://github.com/obsfx/oversee" orb={2}>oversee</ExternalLink> to improve AI productivity.
+    Previously built various <ExternalLink href="https://github.com/obsfx/zero-ld46">games</ExternalLink>, <ExternalLink href="https://github.com/obsfx/libgen-downloader">TUI tools</ExternalLink>, <ExternalLink href="https://omercan.io/m3k">toy programming languages</ExternalLink>, and <ExternalLink href="https://github.com/obsfx/lurkdown">compilers</ExternalLink> just for fun.
+  </p>
+  <p>
+    A former passionate Vim user who rarely opens Neovim anymore. These days, spending most of my time
+    with Claude. Built <ExternalLink href="https://github.com/obsfx/oversee" orb={2}>oversee</ExternalLink> to avoid opening an editor entirely.
+  </p>
+</div>
+
+<script>
+  import { ExperienceClock } from "@/src/lib/experience-clock";
+
+  ExperienceClock.start();
+</script>
+
+<style>
+  .bio {
+    display: grid;
+    gap: 0.9em;
+    max-inline-size: 31em;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    text-wrap: pretty;
+  }
+
+  .intro {
+    margin-block-end: 0.35em;
+    color: var(--fg);
+    font-size: clamp(1.25rem, 1.05rem + 0.6vw, 1.625rem);
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  .experience {
+    position: relative;
+    color: var(--fg);
+    white-space: nowrap;
+    cursor: help;
+    text-decoration: underline dotted;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--line);
+    text-underline-offset: 0.22em;
+  }
+
+  .experience__tooltip {
+    position: absolute;
+    inset-block-end: calc(100% + 0.5rem);
+    inset-inline-start: 50%;
+    translate: -50% 0.25rem;
+    padding: 0.35rem 0.6rem;
+    border-radius: 0.5rem;
+    background: var(--fg);
+    color: var(--bg);
+    font-size: 0.75rem;
+    line-height: 1.3;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+      opacity 160ms ease-out,
+      translate 160ms ease-out;
+  }
+
+  .experience:hover .experience__tooltip,
+  .experience:focus-visible .experience__tooltip {
+    opacity: 1;
+    translate: -50% 0;
+  }
+</style>

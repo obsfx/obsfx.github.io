@@ -1,0 +1,24 @@
+<orb-canvas aria-hidden="true"></orb-canvas>
+
+<style>
+  orb-canvas {
+    position: relative;
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  orb-canvas :global(canvas) {
+    position: absolute;
+    inset: 0;
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+</style>
+
+<script>
+  import { OrbCanvasElement } from "@/src/lib/orbs/orb-canvas-element";
+
+  OrbCanvasElement.register();
+</script>

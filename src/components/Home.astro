@@ -1,0 +1,59 @@
+---
+import Bio from "@/src/components/Bio.astro";
+import Contacts from "@/src/components/Contacts.astro";
+import OrbCanvas from "@/src/components/OrbCanvas.astro";
+---
+
+<div class="home">
+  <div class="visual">
+    <OrbCanvas />
+  </div>
+  <main class="copy">
+    <Bio />
+    <Contacts />
+  </main>
+</div>
+
+<style>
+  .home {
+    position: relative;
+    overflow: hidden;
+    min-block-size: 100svh;
+    background: var(--bg);
+    color: var(--fg-muted);
+  }
+
+  .copy {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-inline-size: 36rem;
+    margin-inline: auto;
+    padding: 11rem clamp(1.25rem, 4vw, 3.5rem) clamp(1.25rem, 4vw, 3.5rem);
+  }
+
+  .visual {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 50%;
+    inline-size: 130vw;
+    aspect-ratio: 2 / 1;
+    translate: -50% 0;
+    pointer-events: none;
+    mask-image: linear-gradient(to bottom, #000 40%, transparent 92%);
+    --orb-anchor-x: 0.5;
+    --orb-anchor-y: 0;
+    --orb-scale: 2.9;
+  }
+
+  @media (min-width: 960px) {
+    .visual {
+      inline-size: min(100vw, 72rem);
+    }
+
+    .copy {
+      padding-block-start: clamp(16rem, 27vw, 23rem);
+    }
+  }
+</style>

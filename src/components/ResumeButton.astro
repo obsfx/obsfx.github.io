@@ -1,0 +1,52 @@
+---
+import Icon from "@/src/components/Icon.astro";
+---
+
+<a class="resume-button" href="https://omercan.io/resume/Omercan-Balandi-Resume.pdf" target="_blank" rel="noreferrer"
+  >Resume<Icon name="arrow-up-right" /></a
+>
+
+<style>
+  .resume-button {
+    display: inline-flex;
+    align-items: center;
+    justify-self: start;
+    gap: 0.4em;
+    margin-block-end: 0.6em;
+    padding: 0.5rem 1.05rem;
+    border: 1px solid color-mix(in oklch, var(--accent), #000 10%);
+    border-radius: 999px;
+    background-color: var(--accent);
+    background-image: linear-gradient(rgb(255 255 255 / 12.5%), rgb(0 0 0 / 7.5%));
+    box-shadow:
+      0 1px 2px rgb(0 0 0 / 15%),
+      inset 0 1px 0 rgb(255 255 255 / 10%);
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    transition:
+      background-color 160ms ease-out,
+      border-color 160ms ease-out,
+      box-shadow 160ms ease-out;
+  }
+
+  .resume-button:hover {
+    border-color: color-mix(in oklch, var(--accent), #000 12.5%);
+    background-color: color-mix(in oklch, var(--accent), #fff 8%);
+  }
+
+  .resume-button:active {
+    border-color: color-mix(in oklch, var(--accent), #000 20%);
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 20%);
+  }
+
+  .resume-button > :global(.icon) {
+    inline-size: 0.6em;
+    block-size: 0.6em;
+    margin: 0;
+    vertical-align: 0;
+    opacity: 0.9;
+  }
+</style>

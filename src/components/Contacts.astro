@@ -1,0 +1,48 @@
+---
+import Icon from "@/src/components/Icon.astro";
+
+const contacts = [
+  { label: "hello@omercan.io", href: "mailto:hello@omercan.io", icon: "mail" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/omercanbalandi/", icon: "arrow-up-right" },
+  { label: "GitHub", href: "https://github.com/obsfx", icon: "arrow-up-right" },
+  { label: "npm", href: "https://www.npmjs.com/~obsfx", icon: "arrow-up-right" },
+  { label: "CodePen", href: "https://codepen.io/obsfx", icon: "arrow-up-right" },
+  { label: "itch.io", href: "https://obsfx.itch.io/", icon: "arrow-up-right" },
+] as const;
+---
+
+<ul class="contacts">
+  {
+    contacts.map(({ label, href, icon }) => {
+      return (
+        <li>
+          <a href={href} target="_blank" rel="noreferrer">
+            {label}
+            <Icon name={icon} />
+          </a>
+        </li>
+      );
+    })
+  }
+</ul>
+
+<style>
+  .contacts {
+    display: grid;
+    gap: 0.35rem;
+    padding: 0;
+    list-style: none;
+    font-size: 0.875rem;
+  }
+
+  .contacts a {
+    color: var(--fg-muted);
+    text-decoration: none;
+    transition: color 160ms ease-out;
+  }
+
+  .contacts a:hover,
+  .contacts a:focus-visible {
+    color: var(--fg);
+  }
+</style>
